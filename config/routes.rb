@@ -1,4 +1,13 @@
 Moorem::Application.routes.draw do
+  get "pages/about_us"
+  get "pages/services"
+  get "pages/testimonials"
+  get "pages/sitemap"
+  get "pages/contact_us"
+  get "about_us/services"
+  get "about_us/testimonials"
+  get "about_us/sitemap"
+  get "about_us/contact_us"
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
