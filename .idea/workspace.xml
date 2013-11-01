@@ -4,7 +4,7 @@
     <list default="true" id="d88d71e4-eefd-44da-98c0-a5c0122035f3" name="Default" comment="" />
     <ignored path="moorem.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/database.yml" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1382706567085" ignored="false" />
+    <file path="/database.yml" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383319884241" ignored="false" />
     <file path="/routes.rb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383311798009" ignored="false" />
     <file path="/index.html.erb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1382709659582" ignored="false" />
     <file path="/style.css" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383067507970" ignored="false" />
@@ -33,14 +33,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contact_us.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact_us.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/contact_us.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="54" selection-start="5742" selection-end="5742" vertical-scroll-proportion="0.9388489">
+            <state line="121" column="30" selection-start="5034" selection-end="5034" vertical-scroll-proportion="-5.6923075">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="41" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="24" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="44" selection-start="4843" selection-end="4843" vertical-scroll-proportion="-17.615385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="10" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.22302158">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,22 +109,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/team-member.css" />
         <option value="$PROJECT_DIR$/app/views/shared/_footer.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_header.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20131101133448_create_contacts.rb" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/log/development.log" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/contact_us.html.erb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_header.erb" />
       </list>
     </option>
   </component>
@@ -154,7 +190,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -171,6 +211,14 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -186,7 +234,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moorem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moorem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,11 +561,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/circularnav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="62" selection-start="454" selection-end="454" vertical-scroll-proportion="0.029209621" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../moorem-html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1030" column="51" selection-start="67714" selection-end="68719" vertical-scroll-proportion="0.7495396" />
@@ -513,20 +574,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="801" column="57" selection-start="37567" selection-end="37567" vertical-scroll-proportion="0.031307552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="14" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.031307552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="51" selection-start="6078" selection-end="6078" vertical-scroll-proportion="0.48021582">
           <folding />
         </state>
       </provider>
@@ -568,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33905" column="109" selection-start="1838006" selection-end="1838006" vertical-scroll-proportion="0.029876977">
@@ -598,11 +638,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/contact_us.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="54" selection-start="5742" selection-end="5742" vertical-scroll-proportion="0.9388489">
+        <state line="121" column="30" selection-start="5034" selection-end="5034" vertical-scroll-proportion="-5.6923075">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="41" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="44" selection-start="4843" selection-end="4843" vertical-scroll-proportion="-17.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="10" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.22302158">
+          <folding />
         </state>
       </provider>
     </entry>

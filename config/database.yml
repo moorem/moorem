@@ -32,8 +32,8 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: moorem_production
+  database: moorem_moorem
   pool: 5
-  username: root
-  password:
+  username: moorem
+  password: W%$hd0G^%&LB
   host: localhost
