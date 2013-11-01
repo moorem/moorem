@@ -3,17 +3,13 @@ Moorem::Application.routes.draw do
   get "pages/services"
   get "pages/testimonials"
   get "pages/sitemap"
-  get "pages/contact_us"
-  get "about_us/services"
-  get "about_us/testimonials"
-  get "about_us/sitemap"
-  get "about_us/contact_us"
+  get 'contact', to: 'pages#contact_us'
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -49,7 +45,7 @@ Moorem::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
