@@ -2487,7 +2487,3 @@ footer a, .contact-box:hover, #options li a.selected, header .top-bar, header .t
 .panel-group .panel, .accordionMod .accordion-group {
     margin-bottom: 15px;
 }
-
-section#style-switcher {
-    display: none;
-}
