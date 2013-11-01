@@ -13,7 +13,7 @@
     <file path="/20131101133448_create_contacts.rb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383313532614" ignored="false" />
     <file path="/contact.rb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383313917168" ignored="false" />
     <file path="/pages_controller.rb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383314056952" ignored="false" />
-    <file path="/contact_us.html.erb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383318020304" ignored="false" />
+    <file path="/contact_us.html.erb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383319256887" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +36,20 @@
       <file leaf-file-name="contact_us.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/contact_us.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="32" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.5557554">
+            <state line="143" column="54" selection-start="5742" selection-end="5742" vertical-scroll-proportion="0.9388489">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="24" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -573,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="288" selection-end="288" vertical-scroll-proportion="0.58419245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../visme/app/views/pages/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="6" selection-start="497" selection-end="522" vertical-scroll-proportion="-9.807693">
@@ -587,9 +589,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="24" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/contact_us.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="32" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.5557554">
+        <state line="143" column="54" selection-start="5742" selection-end="5742" vertical-scroll-proportion="0.9388489">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
