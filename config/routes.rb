@@ -4,7 +4,8 @@ Moorem::Application.routes.draw do
   get "pages/testimonials"
   get "pages/sitemap"
   get 'contact', to: 'pages#contact_us'
-  get "home/index"
+  resource :pages, only: [:create]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
