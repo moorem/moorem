@@ -39,7 +39,7 @@ h3.title {
 }
 
 h3.title:after {
-    background: url(../img/bg_off.png) repeat;
+    background: url(/assets/bg_off.png) repeat;
     content: "";
     height: 5px;
     margin-left: 10px;
@@ -57,7 +57,7 @@ h3.title:after {
 }
 
 .our-clients, .service-reasons {
-    background: url(../img/img-bg-blur.jpg) 50% 0 no-repeat fixed;
+    background: url(/assets/img-bg-blur.jpg) 50% 0 no-repeat fixed;
     margin: 0 auto;
     padding: 50px 0;
     background-position: center center;
@@ -176,7 +176,7 @@ header .social i, footer .social i {
 
 #search-form .search-text-box {
     background-color: #fff;
-    background-image: url(../img/search-icon.png);
+    background-image: url(/assets/search-icon.png);
     background-position: 6px 56%;
     background-repeat: no-repeat;
     border: 0;
@@ -297,7 +297,7 @@ h2.title {
     position: relative;
     max-height: 470px !important;
     overflow: hidden;
-    background-image: url(../img/loader.gif);
+    background-image: url(/assets/loader.gif);
     background-repeat: no-repeat;
     background-position: 50%;
     padding: 0;
@@ -1089,7 +1089,7 @@ ul.graph-container {
 .post-image, .img-content {
     padding: 4px;
     border: 1px solid #ddd;
-    background: url(../img/bg_off.png) repeat;
+    background: url(/assets/bg_off.png) repeat;
 }
 
 .img-content {
@@ -1543,7 +1543,7 @@ a.scrollup:hover i, a.scrollup:focus i {
 
 .contact-us {
     margin: 15px 0 0;
-    background: url("../img/contact-map.png") no-repeat center bottom;
+    background: url("/assets/contact-map.png") no-repeat center bottom;
 }
 
 footer .contact-us a {
@@ -1656,7 +1656,7 @@ ul.why li:before {
 
 .services-big div.content-box div.content-box-icon {
     border: 1px solid #ddd;
-    background: url(../img/bg_off.png) repeat;
+    background: url(/assets/bg_off.png) repeat;
     border-radius: 2px;
     display: block;
     float: none;
@@ -1703,7 +1703,7 @@ ul.why li:before {
 
 .blog-divider {
     margin: 35px 0;
-    background: url(../img/bg_off.png) repeat;
+    background: url(/assets/bg_off.png) repeat;
     content: "";
     height: 5px;
 }
@@ -2058,7 +2058,7 @@ ul#projects-carousel {
 }
 
 .portfolio-item {
-    background: url("../img/bg_off.png") repeat;
+    background: url("/assets/bg_off.png") repeat;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -2112,7 +2112,7 @@ ul#projects-carousel {
 
 .post-body {
     padding: 4px;
-    background: url("../img/bg_off.png") repeat;
+    background: url("/assets/bg_off.png") repeat;
     border: 1px solid #DDDDDD;
     border-radius: 3px;
 }
