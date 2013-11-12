@@ -55,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_header.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="14" selection-start="1705" selection-end="1705" vertical-scroll-proportion="-28.115385">
+            <state line="8" column="26" selection-start="307" selection-end="307" vertical-scroll-proportion="0.2620424">
               <folding />
             </state>
           </provider>
@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="49" selection-start="4407" selection-end="4407" vertical-scroll-proportion="0.49604744">
+            <state line="114" column="49" selection-start="4407" selection-end="4407" vertical-scroll-proportion="-9.653846">
               <folding />
             </state>
           </provider>
@@ -142,8 +142,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/theme-responsive.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_header.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_header.erb" />
       </list>
     </option>
   </component>
@@ -654,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="14" selection-start="1705" selection-end="1705" vertical-scroll-proportion="-28.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
@@ -677,7 +670,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="49" selection-start="4407" selection-end="4407" vertical-scroll-proportion="0.49604744">
+        <state line="114" column="49" selection-start="4407" selection-end="4407" vertical-scroll-proportion="-9.653846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26" selection-start="307" selection-end="307" vertical-scroll-proportion="0.2620424">
           <folding />
         </state>
       </provider>
