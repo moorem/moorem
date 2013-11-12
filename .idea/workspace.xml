@@ -8,7 +8,7 @@
     <file path="/routes.rb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383728546144" ignored="false" />
     <file path="/index.html.erb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1384264042529" ignored="false" />
     <file path="/style.css" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383324563630" ignored="false" />
-    <file path="/application.html.erb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383312255608" ignored="false" />
+    <file path="/application.html.erb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1384265171114" ignored="false" />
     <file path="/_header.erb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1384263253930" ignored="false" />
     <file path="/20131101133448_create_contacts.rb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383313532614" ignored="false" />
     <file path="/contact.rb" changelist="d88d71e4-eefd-44da-98c0-a5c0122035f3" time="1383313917168" ignored="false" />
@@ -37,82 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="20" selection-start="1825" selection-end="1825" vertical-scroll-proportion="-25.038462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="307" selection-end="307" vertical-scroll-proportion="0.2620424">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index-nivo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../moorem-html/index-nivo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="735" column="31" selection-start="11018" selection-end="53875" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="49" selection-start="4407" selection-end="4407" vertical-scroll-proportion="-9.653846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2109" column="32" selection-start="41923" selection-end="41923" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_footer.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="95" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme-responsive.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/theme-responsive.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="79" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+            <state line="6" column="131" selection-start="334" selection-end="334" vertical-scroll-proportion="0.19354838">
               <folding />
             </state>
           </provider>
@@ -141,9 +69,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/theme-responsive.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_header.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -661,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="20" selection-start="1825" selection-end="1825" vertical-scroll-proportion="-25.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="49" selection-start="4407" selection-end="4407" vertical-scroll-proportion="-9.653846">
@@ -678,6 +599,13 @@
     <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="26" selection-start="307" selection-end="307" vertical-scroll-proportion="0.2620424">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="131" selection-start="334" selection-end="334" vertical-scroll-proportion="0.19354838">
           <folding />
         </state>
       </provider>
