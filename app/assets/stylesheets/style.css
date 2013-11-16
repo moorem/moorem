@@ -2487,3 +2487,12 @@ footer a, .contact-box:hover, #options li a.selected, header .top-bar, header .t
 .panel-group .panel, .accordionMod .accordion-group {
     margin-bottom: 15px;
 }
+
+.slider-wrapper {
+    background: url(/assets/bg-banner.jpg) top repeat-x;
+    width: 100%;
+    height: 442px;
+    clear: both;
+    background-size: cover;
+    background-position: 0% 10%;
+}
