@@ -387,7 +387,7 @@
 }
 .button-label:before { 
 	content: " "; 
-	white-space: wrap; 
+	white-space: nowrap;
 }
 
 .main span:first-of-type{
