@@ -8,49 +8,6 @@ jQuery(document).ready(function () {
 	jQuery(".search-text-box").focus(function(){
 	   jQuery("ul.social").animate({ marginLeft: "-120px"}, 450, "easeInSine")
 	});
-
-
-
-
-/*----------------------------------------------------*/
-/*	Keyframe animations enable
-/*----------------------------------------------------*/
-
-jQuery().waypoint && jQuery("body").imagesLoaded(function () {
-        jQuery(".animate_afc, .animate_afl, .animate_afr, .animate_aft, .animate_afb, .animate_wfc, .animate_hfc, .animate_rfc, .animate_rfl, .animate_rfr").waypoint(function () {
-            if (!jQuery(this).hasClass("animate_start")) {
-                var e = jQuery(this);
-                setTimeout(function () {
-                    e.addClass("animate_start")
-                }, 20)
-            }
-        }, {
-            offset: "85%",
-            triggerOnce: !0
-        })
-    });
-
-
-
-/*----------------------------------------------------*/
-/*	Flickr Feed
-/*----------------------------------------------------*/
-
-$('ul#flickrfeed').jflickrfeed({
-		limit: 6,
-		qstrings: {
-			id: '71865026@N00'
-		},
-		itemTemplate: '<li>'+
-						'<a rel="prettyPhoto[pp_gal]" href="{{image}}">' +
-							'<img src="{{image_s}}" alt="{{title}}" />' +
-						'</a>' +
-					  '</li>'
-	}, function(data) {
-		$('a[rel^="prettyPhoto"]').prettyPhoto();
-	});
-
-
 	
 /*----------------------------------------------------*/
 /*	Superfish Mainmenu Section
@@ -459,16 +416,6 @@ jQuery(document).ready(function () {
 	jQuery('.service-reasons').parallax("50%", 0.1);
 
 	jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({overlay_gallery: false});
-	
-	
-
-/*----------------------------------------------------*/
-/*	Tootltip Initialize
-/*----------------------------------------------------*/
-
-
-
-    jQuery("[data-toggle='tooltip']").tooltip();
 
 });
 
@@ -507,88 +454,6 @@ jQuery(document).ready(function () {
 	
 	});
 
-
-
-/*----------------------------------------------------*/
-/*	Twitter Section
-/*----------------------------------------------------*/
-
-	jQuery('#tweets').tweetMachine('', {
-		endpoint: 'statuses/user_timeline',
-		user_name: 'FIFOThemes',
-		include_retweets: true,
-		exclude_replies: false,
-		limit: 1,
-		autoRefresh: false
-	});
-
-
-
-
-
-/*----------------------------------------------------*/
-/*	Tabs Control Section
-/*----------------------------------------------------*/
-
-
-	jQuery("#horizontal-tabs").tytabs({
-		tabinit: "1",
-		fadespeed: "fast"
-	});
-	jQuery("#horizontal-tabs.two").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_two",
-		prefixcontent: "content_two",
-		fadespeed: "fast"
-	});
-	jQuery("#horizontal-tabs.three").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_three",
-		prefixcontent: "content_three",
-		fadespeed: "fast"
-	});
-	jQuery("#horizontal-tabs.four").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_four",
-		prefixcontent: "content_four",
-		fadespeed: "fast"
-	});
-	jQuery("#horizontal-tabs.five").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_five",
-		prefixcontent: "content_five",
-		fadespeed: "fast"
-	});
-	jQuery("#vertical-tabs").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_v",
-		prefixcontent: "content_v",
-		fadespeed: "fast"
-	});
-	jQuery("#vertical-tabs.two").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_v_two",
-		prefixcontent: "content_v_two",
-		fadespeed: "fast"
-	});
-	jQuery("#vertical-tabs.three").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_v_three",
-		prefixcontent: "content_v_three",
-		fadespeed: "fast"
-	});
-	jQuery("#vertical-tabs.four").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_v_four",
-		prefixcontent: "content_v_four",
-		fadespeed: "fast"
-	});
-	jQuery("#vertical-tabs.five").tytabs({
-		tabinit: "1",
-		prefixtabs: "tab_v_five",
-		prefixcontent: "content_v_five",
-		fadespeed: "fast"
-	});
 	jQuery(".hideit").click(function () {
 		e(this).fadeOut(600)
 	});
@@ -614,27 +479,7 @@ jQuery(document).ready(function () {
 		jQuery("#example_bottom").popover({
 			placement: 'bottom'
 		});
-	}); 
-
-
-
-	/*----------------------------------------------------*/
-	/*	Jquery Google map Section
-	/*----------------------------------------------------*/
-		
-	//Google map
-	jQuery('#maps').gMap({
-		address: "Khulna Division, India",
-		zoom: 10,
-		markers: [{
-			latitude: 22.816694,
-			longitude: 89.549904,
-			html: "<h4>FIFO Themes</h4>Wordpress, HTML5/CSS Themes",
-			popup: true
-		}]
 	});
-
-
 
 	/*----------------------------------------------------*/
 	/*	Contact Form Section
