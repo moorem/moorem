@@ -218,6 +218,7 @@ header .main-header {
 
 .logo {
     height: 80px;
+    margin-top: 3px;
 }
 
 .logo h1 {
@@ -2476,7 +2477,7 @@ ol li ol.childlist .comment-des, header nav li, .avatar {
     overflow: hidden;
 }
 
-footer a, .contact-box:hover, #options li a.selected, header .top-bar, header .top-bar a, header .social li:hover i, footer .social li:hover i, .content-box:hover>.content-box-icon i, div.content-box div.content-box-icon:hover, div.content-box div.content-box-icon:hover i, #footer h3, .contact-box:hover h3 {
+footer a, .contact-box:hover, #options li a.selected, header .top-bar, header .top-bar a, header .social li:hover i, footer .social li:hover i, .content-box:hover > .content-box-icon i, div.content-box div.content-box-icon:hover, div.content-box div.content-box-icon:hover i, #footer h3, .contact-box:hover h3 {
     color: #fff;
 }
 
