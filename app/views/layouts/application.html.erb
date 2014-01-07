@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : "Moorem" %> - Web Development using RoR, PHP and Mobile Application Development</title>
+  <title><%= content_for?(:title) ? yield(:title) : "Moorem" %> - Web Development using RoR, PHP and Mobile Application
+    Development</title>
   <%= csrf_meta_tags %>
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -13,6 +14,7 @@
   <![endif]-->
 
   <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
   <!-- For third-generation iPad with high-resolution Retina display: -->
   <!-- Size should be 144 x 144 pixels -->
@@ -54,26 +56,5 @@
   <a href="#" class="scrollup"><i class="icon-angle-up"></i></a>
 </div>
 <!-- Wrap End -->
-
 </body>
-<!-- The Scripts -->
-<script src="/assets/jquery.min.js"></script>
-<script src="/assets/bootstrap.js"></script>
-<script src="/assets/jquery.parallax.js"></script>
-<script src="/assets/modernizr-2.6.2.min.js"></script>
-<script src="/assets/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-<script src="/assets/jquery.nivo.slider.pack.js"></script>
-<script src="/assets/jquery.prettyPhoto.js"></script>
-<script src="/assets/superfish.js"></script>
-<script src="/assets/tweetMachine.js"></script>
-<script src="/assets/tytabs.js"></script>
-<script src="/assets/jquery.gmap.min.js"></script>
-<script src="/assets/circularnav.js"></script>
-<script src="/assets/jquery.sticky.js"></script>
-<script src="/assets/jflickrfeed.js"></script>
-<script src="/assets/imagesloaded.pkgd.min.js"></script>
-<script src="/assets/waypoints.min.js"></script>
-<script src="/assets/spectrum.js"></script>
-<script src="/assets/switcher.js"></script>
-<script src="/assets/custom.js"></script>
 </html>
