@@ -6,6 +6,8 @@ gem 'protected_attributes'
 gem 'rake', '10.1.1'
 gem 'thin'
 gem 'sqlite3', '1.3.8'
+gem 'twitter', '5.5.1'
+gem 'certified'
 
 # Use mysql as the database for Active Record
 #gem 'mysql2', '0.3.11'
