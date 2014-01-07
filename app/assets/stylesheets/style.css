@@ -920,7 +920,10 @@ ol.commentlist li:first-child {
 }
 
 .slogan-content {
-    padding: 25px 0;
+    padding: 28px 0;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
 .slogan-title {
@@ -2490,10 +2493,15 @@ footer a, .contact-box:hover, #options li a.selected, header .top-bar, header .t
 }
 
 .slider-wrapper {
-    background: url(/assets/bg-banner.jpg) top repeat-x;
     width: 100%;
-    height: 442px;
     clear: both;
     background-size: cover;
     background-position: 0% 10%;
+}
+
+@media only screen and (min-width: 1170px) {
+    .main-content .container .row .col-md-4 {
+        height: 326px;
+    }
+
 }
