@@ -5,9 +5,10 @@ gem 'rails', '4.0.2'
 gem 'protected_attributes'
 gem 'rake', '10.1.1'
 gem 'thin'
+gem 'sqlite3', '1.3.8'
 
 # Use mysql as the database for Active Record
-gem 'mysql2', '0.3.11'
+#gem 'mysql2', '0.3.11'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
