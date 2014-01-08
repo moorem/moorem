@@ -12,9 +12,12 @@
             iPhone and Social Apps and we are best at it.
           </p>
         </section>
-        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two" style="display: none;">
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two">
           <h3>Twitter Stream</h3>
           <ul id="tweets">
+            <% @tweets.each do |tweet| %>
+                <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}", :target => '_blank' %></li>
+            <% end %>
           </ul>
         </section>
         <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-three">
@@ -47,7 +50,7 @@
       </div>
     </div>
   </div>
-      <%= @test.inspect %>
+
   <!-- Footer Top End -->
   <!-- Footer Bottom Start -->
   <div class="footer-bottom">
