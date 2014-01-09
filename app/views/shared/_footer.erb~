@@ -1,0 +1,139 @@
+<!-- Footer Start -->
+<footer id="footer">
+  <!-- Footer Top Start -->
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-one">
+          <h3>About</h3>
+
+          <p>
+            Moorem is an Agile Web and Mobile application Development company. Our specialty is Ruby On Rails, Android,
+            iPhone and Social Apps and we are best at it.
+          </p>
+        </section>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two">
+          <h3>Twitter Stream</h3>
+          <ul id="tweets">
+            <% @tweets.each do |tweet| %>
+                <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}", :target => '_blank' %></li>
+            <% end %>
+          </ul>
+        </section>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm- footer-three">
+          <h3>Testimonial</h3>
+          <ul id="testimonial">
+                <div id="testimonials-1" class="carousel slide testimonials testimonials-v1">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <p>
+                        It is a great experience working with..
+                      </p>
+                      <div class="testimonial-info">
+                        <img alt="" src="assets/testimonial/team-member-1-9ee01e8b8f844f9596436e878fbe60ad.jpg"></img>
+                        <span class="testimonial-author">
+                          Jeremy Asigner 
+                          <em>
+                            Web Developer, Unify Theme.
+                          </em>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="item ">
+                      <p>
+                        Will work with this..
+                      </p>
+                      <div class="testimonial-info">
+                        <img alt="" src="assets/testimonials/team-member-2-b81489eecc36ebd877b034a0e292978b.jpg"></img>
+                        <span class="testimonial-author">
+                          User 
+                          <em>
+                            Java Developer,Htmlstream 
+                          </em>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="item ">
+                      <p>
+                        Great work..
+                      </p>
+                      <div class="testimonial-info">
+                        <img alt="" src="assets/testimonials/team-member-3-d377c07eba5ff999f48b3f42d87ca386.jpg"></img>
+                        <span class="testimonial-author">
+                          Kate Davenport 
+                          <em>
+                            Web Designer, Google Inc.
+                          </em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                <div class="carousel-arrow">
+                  <a class="left carousel-control" data-slide="prev" href="#testimonials-1">
+                    <i class="icon-angle-left"></i>
+                  </a>
+                  <a class="right carousel-control" data-slide="next" href="#testimonials-1">
+                    <i class="icon-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </section>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four">
+          <h3>Contact Us</h3>
+          <ul class="contact-us">
+            <li>
+              <i class="icon-map-marker"></i>
+
+              <p>
+                <strong>Address:</strong> #538, 2nd Floor, 14th Cross, <br>3rd Block, ViswaPriya Layout, <br>Begur Main
+                Road,<br>Bangalore, India - 560068
+              </p>
+            </li>
+            <li>
+              <i class="icon-phone"></i>
+
+              <p><strong>Phone:</strong> +91 973 878 0580</p>
+            </li>
+            <li>
+              <i class="icon-envelope"></i>
+
+              <p><strong>Email:</strong><a href="mailto:info@moorem.com">info@moorem.com</a></p>
+            </li>
+          </ul>
+        </section>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four" style="display: none;">
+          <h3>Flickr Photostream</h3>
+          <ul id="flickrfeed" class="thumbs"></ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Top End -->
+  <!-- Footer Bottom Start -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 "> &copy; Copyright 2014 by
+          <a href="http://www.moorem.com/">Moorem</a>. All Rights
+          Reserved.
+        </div>
+        <!--<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">-->
+        <!--<ul class="social social-icons-footer-bottom">-->
+        <!--<li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="icon-facebook"></i></a>-->
+        <!--</li>-->
+        <!--<li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="icon-twitter"></i></a></li>-->
+        <!--<li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="icon-dribbble"></i></a>-->
+        <!--</li>-->
+        <!--<li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="icon-linkedin"></i></a>-->
+        <!--</li>-->
+        <!--<li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="icon-rss"></i></a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </div>
+  <!-- Footer Bottom End -->
+</footer>
