@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : "Moorem" %> - Web Development using RoR, PHP and Mobile Application
-    Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">3
+  <title>
+<%= content_for?(:title) ? yield(:title) : "Moorem" %> - Web Development using RoR, PHP and Mobile Application Development
+</title>
   <%= csrf_meta_tags %>
 
   <!-- Le HTML5 shim, for I 	E6-8 support of HTML elements -->
@@ -15,20 +16,16 @@
 
   <%= stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+ 
 
-<%javascript_include_tag 'jquery.min','bootstrap','jquery.parallax','modernizr-2.6.2.min',
-'revolution-slider/js/jquery.themepunch.revolution.min','jquery.nivo.slider.pack','jquery.prettyPhoto','superfish','tweetMachine','circularnav','jquery.sticky','imagesloaded.pkgd.min','waypoints.min','spectrum','switcher','custom' %>  
   <!-- For all other devices -->
   <!-- Size should be 32 x 32 pixels -->
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <%#= javascript_include_tag "application" %>
+
 </head>
 <body class="home">
-
-
-
 <div class="wrap">
   <%= render 'shared/header' %>
   <% flash.each do |name, msg| %>
@@ -45,8 +42,6 @@
   <a href="#" class="scrollup"><i class="icon-angle-up"></i></a>
 </div>
 <!-- Wrap End -->
-
-
 
 </body>
 </html>

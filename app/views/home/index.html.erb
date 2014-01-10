@@ -3,9 +3,9 @@
 <!-- Slider Start-->
 <div class="slider-wrapper theme-default">
   <div id="nivoslider" class="nivoSlider">
-    <a href="#"><img src="/assets/slider/nivo_slider1.jpg" alt="Nature" title="#htmlcaption"></a>
-    <a href="#"><img src="/assets/slider/nivo_slider3.jpg" alt="" data-transition="slideInLeft" title="#htmlcaption2"></a>
-    <a href="#"><img src="/assets/slider/nivo_slider4.jpg" alt="" data-transition="slideInRight" title="#htmlcaption3"></a>
+    <%= link_to image_tag('slider/nivo_slider1.jpg'), '#' %> 
+    <%= link_to image_tag('slider/nivo_slider2.jpg'), '#' %> 
+    <%= link_to image_tag('slider/nivo_slider3.jpg'), '#' %>
   </div>
   <div id="htmlcaption" class="nivo-html-caption">
     <h2>Dedicated Engineering Center/IDC Setup</h2>
@@ -21,8 +21,7 @@
 <!-- Slider End-->
 <!-- Slogan Start-->
 <div class="slogan bottom-pad-small">
-  <div class="container">
-    <div class="row">
+  <div class="container
       <div class="slogan-content">
         <div class="col-lg-9 col-md-9">
           <h2 class="slogan-title">We are hiring RoR and Android developers!</h2>
@@ -39,7 +38,6 @@
 </div>
 <!-- Slogan End-->
 <!-- Main Content start-->
-<%= javascript_include_tag 'bootstrap' %>
 
 <div class="main-content">
   <div class="container">
