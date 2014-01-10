@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">3
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-<%= content_for?(:title) ? yield(:title) : "Moorem" %> - Web Development using RoR, PHP and Mobile Application Development
-</title>
+    <%= content_for?(:title) ? yield(:title) : "Moorem" %> - Web Development using RoR, PHP and Mobile Application Development
+  </title>
   <%= csrf_meta_tags %>
 
   <!-- Le HTML5 shim, for I 	E6-8 support of HTML elements -->
@@ -15,8 +15,8 @@
   <![endif]-->
 
   <%= stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag 'http://code.jquery.com/jquery-1.8.3.min.js' %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
- 
 
   <!-- For all other devices -->
   <!-- Size should be 32 x 32 pixels -->
