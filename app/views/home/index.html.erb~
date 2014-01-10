@@ -690,3 +690,11 @@
 <!-- Our Clients End -->
 </div>
 <!-- Content End -->
+
+<script type="text/javascript">
+	jQuery('.portfolio-carousel').carousel({interval: false, wrap: false});	
+	
+	jQuery('.client-carousel').carousel({interval: false, wrap: false});
+	
+	jQuery('.testimonials-carousel').carousel({interval: 5000, pause: "hover"});
+</script>
