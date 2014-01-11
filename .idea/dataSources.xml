@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="1599484371">
-    <data-source source="LOCAL" name="Rails moorem: development" uuid="d32c201b-236a-45b6-b2d4-10a390645798">
-      <driver-ref>mysql</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Projects\moorem\db\development.sqlite3</jdbc-url>
+    <data-source source="LOCAL" name="Rails moorem: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="d32c201b-236a-45b6-b2d4-10a390645798">
       <libraries />
     </data-source>
-    <data-source source="LOCAL" name="Rails moorem: test" uuid="f23a5f8a-7ad9-4426-9ded-4f69bd27bbf7">
-      <driver-ref>mysql</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Projects\moorem\db\test.sqlite3</jdbc-url>
+    <data-source source="LOCAL" name="Rails moorem: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f23a5f8a-7ad9-4426-9ded-4f69bd27bbf7">
       <libraries />
     </data-source>
-    <data-source source="LOCAL" name="Rails moorem: production" uuid="f970f31f-8b30-4734-bc04-72191f392ae2">
-      <driver-ref>mysql</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Projects\moorem\db\production.sqlite3</jdbc-url>
+    <data-source source="LOCAL" name="Rails moorem: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f970f31f-8b30-4734-bc04-72191f392ae2">
       <libraries />
     </data-source>
   </component>
