@@ -43,7 +43,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="71" selection-start="1678" selection-end="1678" vertical-scroll-proportion="-16.625">
+            <state line="25" column="0" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-15.625">
               <folding />
             </state>
           </provider>
@@ -52,7 +52,7 @@
       <file leaf-file-name="_footer.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="-4.2083335">
+            <state line="52" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,19 +67,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1667" column="30" selection-start="33154" selection-end="33154" vertical-scroll-proportion="0.26086956">
+            <state line="1667" column="30" selection-start="33154" selection-end="33154" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_header.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="71" selection-start="697" selection-end="727" vertical-scroll-proportion="-8.125">
+            <state line="4" column="103" selection-start="135" selection-end="135" vertical-scroll-proportion="0.11516315">
               <folding />
             </state>
           </provider>
@@ -88,10 +88,8 @@
       <file leaf-file-name="contact_us.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/contact_us.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="22" selection-start="2178" selection-end="2178" vertical-scroll-proportion="-12.458333">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="55" column="22" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +97,7 @@
       <file leaf-file-name="contact.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/user_mailer/contact.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
+            <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,23 +106,8 @@
       <file leaf-file-name="custom.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="579" column="0" selection-start="19319" selection-end="19319" vertical-scroll-proportion="-4.064516">
-              <folding>
-                <marker date="1389511228760" expanded="true" signature="10022:11388" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10089:10218" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10261:11213" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10292:11198" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10324:11182" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10359:11166" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10437:11149" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10559:10686" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10764:11131" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="10798:10991" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="11245:11374" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="11473:11691" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="11550:11622" placeholder="..." />
-                <marker date="1389511228760" expanded="true" signature="11566:11605" placeholder="..." />
-              </folding>
+            <state line="579" column="0" selection-start="19319" selection-end="19319" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,12 +141,12 @@
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/contact_us.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_header.erb" />
         <option value="$PROJECT_DIR$/public/js/custom.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_footer.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pricing-table.css.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_header.erb" />
       </list>
     </option>
   </component>
@@ -200,7 +183,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -311,6 +293,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,9 +301,9 @@
     <property name="LayoutCode.rearrangeEntriesRHTML" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
-    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
     <property name="LayoutCode.rearrangeEntriesYaml" value="false" />
   </component>
   <component name="RecentsManager">
@@ -427,10 +410,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2757235" sideWeight="0.6704731" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28054664" sideWeight="0.6704731" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -440,6 +422,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -562,59 +545,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="579" column="0" selection-start="19319" selection-end="19319" vertical-scroll-proportion="-4.064516">
-          <folding>
-            <marker date="1389511228760" expanded="true" signature="10022:11388" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10089:10218" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10261:11213" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10292:11198" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10324:11182" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10359:11166" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10437:11149" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10559:10686" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10764:11131" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="10798:10991" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="11245:11374" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="11473:11691" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="11550:11622" placeholder="..." />
-            <marker date="1389511228760" expanded="true" signature="11566:11605" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="71" selection-start="1678" selection-end="1678" vertical-scroll-proportion="-16.625">
+        <state line="579" column="0" selection-start="19319" selection-end="19319" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user_mailer/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
+        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/contact_us.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="22" selection-start="2178" selection-end="2178" vertical-scroll-proportion="-12.458333">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="71" selection-start="697" selection-end="727" vertical-scroll-proportion="-8.125">
+        <state line="55" column="22" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="-4.2083335">
+        <state line="52" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -628,7 +580,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1667" column="30" selection-start="33154" selection-end="33154" vertical-scroll-proportion="0.26086956">
+        <state line="1667" column="30" selection-start="33154" selection-end="33154" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="103" selection-start="135" selection-end="135" vertical-scroll-proportion="0.11516315">
           <folding />
         </state>
       </provider>
