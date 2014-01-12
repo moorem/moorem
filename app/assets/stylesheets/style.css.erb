@@ -39,7 +39,7 @@ h3.title {
 }
 
 h3.title:after {
-    background: url(/assets/bg_off.png) repeat;
+    background: url(<%= asset_path 'bg_off.png'%>) repeat;
     content: "";
     height: 5px;
     margin-left: 10px;
@@ -1093,7 +1093,7 @@ ul.graph-container {
 .post-image, .img-content {
     padding: 4px;
     border: 1px solid #ddd;
-    background: url(/assets/bg_off.png) repeat;
+    background: url(<%= asset_path 'bg_off.png'%>) repeat;
 }
 
 .img-content {
@@ -1660,7 +1660,7 @@ ul.why li:before {
 
 .services-big div.content-box div.content-box-icon {
     border: 1px solid #ddd;
-    background: url(/assets/bg_off.png) repeat;
+    background: url(<%= asset_path 'bg_off.png'%>) repeat;
     border-radius: 2px;
     display: block;
     float: none;
@@ -1707,7 +1707,7 @@ ul.why li:before {
 
 .blog-divider {
     margin: 35px 0;
-    background: url(/assets/bg_off.png) repeat;
+    background: url(<%= asset_path 'bg_off.png'%>) repeat;
     content: "";
     height: 5px;
 }
@@ -2062,7 +2062,7 @@ ul#projects-carousel {
 }
 
 .portfolio-item {
-    background: url("/assets/bg_off.png") repeat;
+    background: url("<%= asset_path 'bg_off.png'%>") repeat;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -2116,7 +2116,7 @@ ul#projects-carousel {
 
 .post-body {
     padding: 4px;
-    background: url("/assets/bg_off.png") repeat;
+    background: url("<%= asset_path 'bg_off.png'%>") repeat;
     border: 1px solid #DDDDDD;
     border-radius: 3px;
 }

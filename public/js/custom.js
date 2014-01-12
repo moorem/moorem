@@ -135,7 +135,7 @@ jQuery().waypoint && jQuery("body").imagesLoaded(function () {
 /*	Nivo Slider
 /*----------------------------------------------------*/
 
-jQuery(window).load(function() {
+jQuery(document).ready(function() {
     jQuery('#nivoslider').nivoSlider({
         effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
         slices: 15, // For slice animations
