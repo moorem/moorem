@@ -1,22 +1,17 @@
 class PagesController < ApplicationController
   def about_us
-    @tweets = Twitter.user_timeline[0..4]
   end
 
   def services
-    @tweets = Twitter.user_timeline[0..4]
   end
 
   def testimonials
-    @tweets = Twitter.user_timeline[0..4]
   end
 
   def sitemap
-    @tweets = Twitter.user_timeline[0..4]
   end
 
   def contact_us
-    @tweets = Twitter.user_timeline[0..4]
     @contact = Contact.new
   end
 
