@@ -15,8 +15,12 @@
         <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two">
           <h3>Twitter Stream</h3>
           <ul id="tweets">
-            <% tweet_list.each do |tweet| %>
-                <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}", :target => '_blank' %></li>
+            <% cache do %>
+                <% unless tweet_list.nil? %>
+                    <% tweet_list.each do |tweet| %>
+                        <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}", :target => '_blank' %></li>
+                    <% end %>
+                <% end %>
             <% end %>
           </ul>
         </section>
@@ -43,9 +47,15 @@
             </li>
           </ul>
         </section>
-        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four" style="display: none;">
-          <h3>Flickr Photostream</h3>
-          <ul id="flickrfeed" class="thumbs"></ul>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four">
+          <h3>VISION </h3>
+          Team Work, Collaboration, Development, Motivation, Innovation.<br/>
+          Hassle Free, Easy to Adapt, Learn and Grow.
+          <h3>MISSION </h3>
+          To become one of best company in providing Quality IT Deliverable and Valuable Added Services to our Clients
+          at Competitive Cost.<br/>
+          Make our clients the Pioneers in the Competitive World and lead them to the Destination.
+
         </section>
       </div>
     </div>
@@ -61,16 +71,21 @@
           Reserved.
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
-        <ul class="social social-icons-footer-bottom">
-        <li class="facebook"><a href="https://www.facebook.com/mooremtech" data-toggle="tooltip" title="Facebook"><i class="icon-facebook"></i></a>
-        </li>
-        <li class="twitter"><a href="https://twitter.com/mooremtech" data-toggle="tooltip" title="Twitter"><i class="icon-twitter"></i></a></li>
-        <li class="dribbble"><a href=" http://dribbble.com/mooremtech" data-toggle="tooltip" title="Dribble"><i class="icon-dribbble"></i></a>
-        </li>
-        <li class="linkedin"><a href=" http://www.linkedin.com/company/moorem-technologies-pvt-ltd" data-toggle="tooltip" title="LinkedIn"><i class="icon-linkedin"></i></a>
-        </li>
-        <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="icon-rss"></i></a></li>
-        </ul>
+          <ul class="social social-icons-footer-bottom">
+            <li class="facebook">
+              <a href="https://www.facebook.com/mooremtech" target="_blank" data-toggle="tooltip" title="Facebook"><i class="icon-facebook"></i></a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/mooremtech" target="_blank" data-toggle="tooltip" title="Twitter"><i class="icon-twitter"></i></a>
+            </li>
+            <li class="dribbble">
+              <a href=" http://dribbble.com/mooremtech" target="_blank" data-toggle="tooltip" title="Dribble"><i class="icon-dribbble"></i></a>
+            </li>
+            <li class="linkedin">
+              <a href=" http://www.linkedin.com/company/moorem-technologies-pvt-ltd" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="icon-linkedin"></i></a>
+            </li>
+            <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="icon-rss"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
