@@ -21,16 +21,16 @@ License: MIT
 
 /* http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
 .sp-top {
-  position:relative;
-  width: 100%;
-  display:inline-block;
+    position:relative;
+    width: 100%;
+    display:inline-block;
 }
 .sp-top-inner {
-   position:absolute;
-   top:0;
-   left:0;
-   bottom:0;
-   right:0;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
 }
 .sp-color {
     position: absolute;
@@ -196,15 +196,15 @@ License: MIT
 }
 
 .sp-dragger {
-   border-radius: 5px;
-   height: 5px;
-   width: 5px;
-   border: 1px solid #fff;
-   background: #000;
-   cursor: pointer;
-   position:absolute;
-   top:0;
-   left: 0;
+    border-radius: 5px;
+    height: 5px;
+    width: 5px;
+    border: 1px solid #fff;
+    background: #000;
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left: 0;
 }
 .sp-slider {
     position: absolute;
@@ -252,14 +252,14 @@ License: MIT
     width: 100%;
 }
 .sp-input {
-   font-size: 12px !important;
-   border: 1px inset;
-   padding: 4px 5px;
-   margin: 0;
-   width: 100%;
-   background:transparent;
-   border-radius: 3px;
-   color: #222;
+    font-size: 12px !important;
+    border: 1px inset;
+    padding: 4px 5px;
+    margin: 0;
+    width: 100%;
+    background:transparent;
+    border-radius: 3px;
+    color: #222;
 }
 .sp-input:focus  {
     border: 1px solid orange;
@@ -338,10 +338,10 @@ License: MIT
     *display: inline;
     border: solid 1px #cccccc;
     background: #fff;
-	border-radius:2px;
+    border-radius:2px;
     color: #333;
     vertical-align: middle;
-	width: 150px;
+    width: 150px;
 }
 .sp-replacer:hover, .sp-replacer.sp-active {
     border-color: #F0C49B;
@@ -351,7 +351,7 @@ License: MIT
     cursor:default;
     border-color: silver;
     color: silver;
-	
+
 }
 .sp-dd {
     padding: 2px 0;
@@ -392,23 +392,23 @@ License: MIT
 
 /* Buttons: http://hellohappy.org/css3-buttons/ */
 .sp-container button {
-  background-color: #eeeeee;
-  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
-  border: 1px solid #ccc;
-  border-bottom: 1px solid #bbb;
-  border-radius: 3px;
-  color: #333;
-  font-size: 14px;
-  line-height: 1;
-  padding: 5px 4px;
-  text-align: center;
-  text-shadow: 0 1px 0 #eee;
-  vertical-align: middle;
+    background-color: #eeeeee;
+    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #bbb;
+    border-radius: 3px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1;
+    padding: 5px 4px;
+    text-align: center;
+    text-shadow: 0 1px 0 #eee;
+    vertical-align: middle;
 }
 .sp-container button:hover {
     background-color: #dddddd;
