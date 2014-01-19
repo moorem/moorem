@@ -49,3 +49,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'actionpack-page_caching'
