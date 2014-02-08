@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: 'info@moorem.com'
+  default from: 'contact@moorem.com'
 
   def contact(con)
     @con = con
