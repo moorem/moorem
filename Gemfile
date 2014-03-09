@@ -2,18 +2,20 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
-gem 'protected_attributes'
+gem 'protected_attributes', '1.0.5'
 gem 'rake', '10.1.1'
-gem 'thin'
-gem 'sqlite3', '1.3.8'
+gem 'thin', '1.6.2'
+gem 'sqlite3', '1.3.9'
 gem 'twitter', '4.8.1'
 gem 'certified'
+gem 'font-awesome-rails', '4.0.3.1'
 
 # Use mysql as the database for Active Record
 #gem 'mysql2', '0.3.11'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+gem 'bootstrap-sass', '~> 3.1.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
