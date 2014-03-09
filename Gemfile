@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.3'
 gem 'protected_attributes'
 gem 'rake', '10.1.1'
 gem 'thin'
@@ -51,3 +51,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'actionpack-page_caching'
+gem 'execjs'
+gem 'therubyracer', platforms: :ruby

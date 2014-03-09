@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     if @contact.valid?
-      @contact.save
+      @contact.save!
       redirect_to root_url, notice: 'Message sent! Thank you for contacting us.'
       UserMailer.contact(@contact).deliver
     else
