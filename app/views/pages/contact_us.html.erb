@@ -53,13 +53,15 @@
                     <!--<input class="form-control" type="email" id="email" name="email" value="" required>-->
                   </div>
                 </div>
+
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <label>Subject: <span>*</span></label>
-                    <%= f.select :subject, [['--- PLEASE SELECT ---', 1], ['General Inquiry', 2],['Project Quotation',3],['Post Your Resume',4]] %>
+                    <%= f.select(:subject, [['--- PLEASE SELECT ---', ''], ['General Inquiry', 'General Inquiry'],['Project Quotation','Project Quotation'],['Post Your Resume','Project Quotation']], {}, :class => 'form-control') %>
                     <!--<input class="form-control" id="subject" name="subject" type="text" value="" required>-->
                   </div>
-                </div>
+                </div><br/>
+
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <label>Message: <span>*</span></label>

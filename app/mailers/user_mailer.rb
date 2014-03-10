@@ -1,11 +1,22 @@
 class UserMailer < ActionMailer::Base
-  subject_list = ["PLEASE SELECT","General Inquiry","Project Quotation","Post Your Resume"]
   default from: 'contact@moorem.com'
 
-  def contact(thefile,con)
-    attachments['upload.txt'] = thefile.read
+
+  def contact(con)
     @con = con
     mail(to: @con.email, subject: 'Thanks for contacting us, will get back shortly')
-    #mail(to: "contact@moorem.com", subject: "Moorem #{subject_list[@con.subject]} from #{@con.name} #{@con.email}")
   end
+
+  def admin_contact(con)
+=begin
+    attachments[con.uploaded_document.original_filename] = {
+       content:  con.uploaded_document.read,
+       mime_type: con.uploaded_document.content_type
+    }
+=end
+    @con = con
+    mail(to: "siva@moorem.com", subject: "[Moorem] - #{con.subject} from #{@con.name}")
+  end
+
+
 end
