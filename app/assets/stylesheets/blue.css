@@ -1,5 +1,5 @@
 /*Blue #2eaef0 & #0488cd */
-.btn:focus, .subscribe-btn, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .tp-leftarrow.default:hover,.tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover, .contact-box:hover, #options li a.selected, .ch-info-front {
+.btn:focus, .subscribe-btn, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .tp-leftarrow.default:hover, .tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover, .contact-box:hover, #options li a.selected, .ch-info-front {
     background: #2eaef0;
 }
 
@@ -16,7 +16,7 @@
     background: rgba(46, 174, 240, 0.7) !important;
 }
 
-.tp-leftarrow.default:hover,.tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover {
+.tp-leftarrow.default:hover, .tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover {
     border-color: #2eaef0;
 }
 
@@ -28,7 +28,6 @@
 .hero {
     border-left-color: #2eaef0;
 }
-
 
 .ie8 .btn-color, .ie9 .btn-color {
     background: #2eaef0 !important;
@@ -47,8 +46,7 @@
     cursor: pointer;
 }
 
-
-#current,.menu ul li a:hover,.menu ul>li:hover>a {
+#current, .menu ul li a:hover, .menu ul > li:hover > a {
     border-bottom: 3px solid #2eaef0;
 }
 
@@ -60,10 +58,8 @@ ul.why li:before {
     border-top: 3px solid #2eaef0 !important;
 }
 
-
-
 .author-content, div.content-box.big, #cn-tabs .service, .comment-des, .contact-box {
-    border-bottom-color:#2eaef0 !important;
+    border-bottom-color: #2eaef0;
 }
 
 a, .post-item h4 a:hover, .cn-wrapper li a:hover, .cn-wrapper li a.active, .color {
