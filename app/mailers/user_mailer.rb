@@ -15,7 +15,7 @@ class UserMailer < ActionMailer::Base
     }
 =end
     @con = con
-    mail(to: "siva@moorem.com", subject: "[Moorem] - #{con.subject} from #{@con.name}")
+    mail(to: "contact@moorem.com", subject: "[Moorem] - #{con.subject} from #{@con.name}")
   end
 
 
