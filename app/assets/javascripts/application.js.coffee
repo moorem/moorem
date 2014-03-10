@@ -12,12 +12,7 @@
 
 #= require jquery
 #= require jquery_ujs
-#= require bootstrap/modal
-#= require bootstrap/dropdown
-#= require bootstrap/tooltip
-#= require bootstrap/alert
-#= require bootstrap/collapse
-#= require bootstrap/tab
+#= require bootstrap
 #= require turbolinks
 #= require_tree .
 #= rails.validations

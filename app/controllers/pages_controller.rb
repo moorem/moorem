@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def contact_us
-    @contact = Contact.new
+    @contact = Contact.new(subject: 1)
   end
 
   def create
@@ -20,7 +20,7 @@ class PagesController < ApplicationController
     if @contact.valid?
       @contact.save!
       redirect_to root_url, notice: 'Message sent! Thank you for contacting us.'
-      UserMailer.contact(@contact).deliver
+      UserMailer.contact(params[:contact][:uploaded_document],@contact).deliver
     else
       render 'contact'
     end
