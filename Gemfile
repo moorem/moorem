@@ -55,3 +55,6 @@ end
 gem 'actionpack-page_caching'
 gem 'execjs'
 gem 'therubyracer', platforms: :ruby
+
+#Use textcaptcha for generating the textcaptcha in the contact us form
+gem 'acts_as_textcaptcha'

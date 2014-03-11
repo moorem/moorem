@@ -926,6 +926,10 @@ ol.commentlist li:first-child {
 .reply label span {
     color: #e24747;
 }
+.reply span{
+    color: #e24747;
+    font-weight: bold;
+}
 
 .reply input {
     margin: 0 0 20px;
@@ -1752,7 +1756,7 @@ ul.why li:before {
 }
 
 .bottom-pad {
-    margin-bottom: 60px;
+    margin: 20px 0 30px 0;
 }
 
 .bottom-pad-small {
@@ -2592,4 +2596,12 @@ footer a, .contact-box:hover, #options li a.selected, header .top-bar, header .t
     .slogan-content {
         padding-left: 10px;
     }
+}
+
+/* added to beautify the errors for the textcaptcha */
+#textcaptcha    .field_with_errors{
+    display: inline-block;
+}
+#contact_textcaptcha_answer{
+    margin-bottom: 0px;
 }

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  @subject_list = ["PLEASE SELECT","General Inquiry","Project Quotation","Post Your Resume"]
+
 
   def about_us
   end
@@ -14,19 +14,21 @@ class PagesController < ApplicationController
   end
 
   def contact_us
-    @contact = Contact.new(subject: 1)
+    @contact = Contact.new
+    @contact.textcaptcha
   end
 
   def create
     @contact = Contact.new(params[:contact])
     if @contact.valid?
-      @contact.save!
+      @contact.save
       redirect_to root_url, notice: 'Message sent! Thank you for contacting us.'
       UserMailer.contact(@contact).deliver
-      UserMailer.admin_contact(@contact).deliver
+      UserMailer.admin_contact(params[:contact][:uploaded_document],@contact).deliver
     else
-      render 'contact'
+      render 'contact_us'
     end
   end
+
 
 end

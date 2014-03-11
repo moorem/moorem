@@ -144,7 +144,7 @@ jQuery(document).ready(function () {
 /*	Nivo Slider
  /*----------------------------------------------------*/
 
-jQuery(window).load(function() {
+jQuery(document).ready(function() {
     jQuery('#nivoslider').nivoSlider({
         effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
         slices: 15, // For slice animations
@@ -621,11 +621,10 @@ jQuery('#maps').gMap({
 /*----------------------------------------------------*/
 /*	Contact Form Section
  /*----------------------------------------------------*/
-$("#contact-form").submit(function (e) {
-
+$("#contact-form-test").submit(function (e) {
     var name = $("#name").val().replace(/\s/g, "");
     var email = $("#email").val().replace(/\s/g, "");
-    var subject = $("#subject").val();
+    var subject = $("#contact_subject").val();
     var text = $("#message").val().replace(/\s/g, "");
 
     function isValidEmail(emailAddress) {
@@ -633,28 +632,59 @@ $("#contact-form").submit(function (e) {
         return pattern.test(emailAddress);
     };
 
-    if (isValidEmail(email) && (text.length >= 5) && (name.length >= 3) && (subject >1 && subject <=4)) {
+   function isValidFileUploaded(fileId){
+       $('#file_error_message').remove();
+       fileName = document.getElementById(fileId).value;
+       if(fileName != "" || fileName.replace(/\s/g, "") != "" ){
+           fileName = fileName.split('.').pop().toLowerCase();
+           if(fileName == "pdf" || fileName == "doc" || fileName == "docx")
+           {
+              if(document.getElementById(fileId).files[0].size <= 5120){
+                  return true;
+              }else{
+               $('#contact_uploaded_document').val('');
+               $('#contact_uploaded_document').after('<label id=file_error_message style=color:red;font-weight: bold;>Upload File should be less than 5MB!</label>');
+               return false;
+              }
+           }else {
+               $('#contact_uploaded_document').val('');
+               $('#contact_uploaded_document').after('<label id=file_error_message style=color:red;font-weight: bold;>Please Upload either MS Word or PDF Documents!</label>');
+               return false;
+           }
+       }
+        return true;
+   };
+
+    if (isValidEmail(email) && (text.length >= 5) && (name.length >= 3) && (subject != "") && isValidFileUploaded("contact_uploaded_document")) {
         $('#name_error_message').remove();
         $('#email_error_message').remove();
         $('#subject_error_message').remove();
         $('#message_error_message').remove();
-        return;
+        $('#file_error_message').remove();
+        return ;
     } else if(name.length < 3 || name == "") {
         e.preventDefault();
+        $('#name_error_message').remove();
         $('#name').val('');
         $('#name').after('<label id=name_error_message style=color:red;font-weight: bold;>Please Enter Valid Name</label>');
     }else if(!isValidEmail(email))
     {
         e.preventDefault();
+        $('#email_error_message').remove();
         $('#email').val('');
         $('#email').after('<label id=email_error_message style=color:red;font-weight: bold;>Please Enter Valid Email</label>');
-    }else if(subject == 1){
+    }else if(subject == "" || subject == " "){
         e.preventDefault();
-        $('#subject').after('<label id=subject_error_message style=color:red;font-weight: bold;>Please Select The Appropriate Subject</label>');
+        $('#subject_error_message').remove();
+        $('#contact_subject').after('<label id=subject_error_message style=color:red;font-weight: bold;>Please Select The Appropriate Subject</label>');
     }else if(text.length < 5){
         e.preventDefault();
         $('#message').val('');
+        $('#message_error_message').remove();
         $('#message').after('<label id=message_error_message style=color:red;font-weight: bold;>Please Enter A Valid Message</label>');
+    }else{
+        e.preventDefault();
+        $('#contact_uploaded_document').val('');
     }
 
     //return false;

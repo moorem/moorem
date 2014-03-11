@@ -7,15 +7,15 @@ class UserMailer < ActionMailer::Base
     mail(to: @con.email, subject: 'Thanks for contacting us, will get back shortly')
   end
 
-  def admin_contact(con)
-=begin
-    attachments[con.uploaded_document.original_filename] = {
-       content:  con.uploaded_document.read,
-       mime_type: con.uploaded_document.content_type
-    }
-=end
-    @con = con
-    mail(to: "contact@moorem.com", subject: "[Moorem] - #{con.subject} from #{@con.name}")
+  def admin_contact(uploaded_file,con)
+
+      attachments[uploaded_file.original_filename] = {
+       content:  uploaded_file.read,
+       mime_type: uploaded_file.content_type
+      }unless uploaded_file.nil?
+
+    @contact = con
+    mail(to: "contact@moorem.com", subject: "[Moorem] - #{@contact.subject} from #{@contact.name}")
   end
 
 
