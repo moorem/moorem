@@ -85,7 +85,7 @@
                           <span> *</span>
                         </div>
                         <div id="textcaptcha_input">
-                          <%= f.text_field :textcaptcha_answer, :class => 'form-control' %>
+                          <%= f.text_field :textcaptcha_answer, :class => 'form-control', required: true %>
                           <span><%= @contact.errors[:textcaptcha_answer].join(", ") %></span>
                         </div>
                     <% end %>

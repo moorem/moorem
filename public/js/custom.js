@@ -626,6 +626,7 @@ $("#contact-form-test").submit(function (e) {
     var email = $("#email").val().replace(/\s/g, "");
     var subject = $("#contact_subject").val();
     var text = $("#message").val().replace(/\s/g, "");
+    var spam_answer = $('#contact_textcaptcha_answer').val().replace(/\s/g, "");
 
     function isValidEmail(emailAddress) {
         var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
@@ -639,7 +640,7 @@ $("#contact-form-test").submit(function (e) {
            fileName = fileName.split('.').pop().toLowerCase();
            if(fileName == "pdf" || fileName == "doc" || fileName == "docx")
            {
-              if(document.getElementById(fileId).files[0].size <= 5120){
+              if(document.getElementById(fileId).files[0].size <= 5242880){
                   return true;
               }else{
                $('#contact_uploaded_document').val('');
@@ -655,12 +656,13 @@ $("#contact-form-test").submit(function (e) {
         return true;
    };
 
-    if (isValidEmail(email) && (text.length >= 5) && (name.length >= 3) && (subject != "") && isValidFileUploaded("contact_uploaded_document")) {
+    if (isValidEmail(email) && (text.length >= 5) && (name.length >= 3) && (subject != "") && isValidFileUploaded("contact_uploaded_document") && (spam_answer.length > 0)) {
         $('#name_error_message').remove();
         $('#email_error_message').remove();
         $('#subject_error_message').remove();
         $('#message_error_message').remove();
         $('#file_error_message').remove();
+        $('#captcha_error_message').remove();
         return ;
     } else if(name.length < 3 || name == "") {
         e.preventDefault();
@@ -682,6 +684,11 @@ $("#contact-form-test").submit(function (e) {
         $('#message').val('');
         $('#message_error_message').remove();
         $('#message').after('<label id=message_error_message style=color:red;font-weight: bold;>Please Enter A Valid Message</label>');
+    }else if(spam_answer.length == 0 ){
+        e.preventDefault();
+        $('#contact_textcaptcha_answer').val('');
+        $('#captcha_error_message').remove();
+        $('#contact_textcaptcha_answer').after('<label id=captcha_error_message style=color:red;font-weight: bold;>Please Enter Answer For The Above Question</label>');
     }else{
         e.preventDefault();
         $('#contact_uploaded_document').val('');

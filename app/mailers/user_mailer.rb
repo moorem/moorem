@@ -15,7 +15,7 @@ class UserMailer < ActionMailer::Base
       }unless uploaded_file.nil?
 
     @contact = con
-    mail(to: "contact@moorem.com", subject: "[Moorem] - #{@contact.subject} from #{@contact.name}")
+    mail(from: @contact.email, to: "contact@moorem.com", subject: "[Moorem] - #{@contact.subject} from #{@contact.name}")
   end
 
 
