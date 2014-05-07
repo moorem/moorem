@@ -1,16 +1,9 @@
-Moorem::Application.routes.draw do
-  get "pages/about_us"
-  get "pages/services"
-  get "pages/testimonials"
-  get "pages/sitemap"
-  get 'contact', to: 'pages#contact_us'
-  resource :pages, only: [:create]
-
+Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
