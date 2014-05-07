@@ -1,0 +1,45 @@
+<header>
+  <div class="container">
+    <h1 class="logo">
+      <a href="/">
+        <img alt="Porto" src="assets/logo.png">
+      </a>
+    </h1>
+    <nav>
+      <ul class="nav nav-pills nav-top">
+        <li class="phone">
+          <span><i class="icon-phone"></i>+91 973 878 0580</span>
+        </li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <ul class="social-icons">
+        <li class="facebook"><a href="https://www.facebook.com/mooremtech" target="_blank" title="Facebook">Facebook</a>
+        </li>
+        <li class="twitter"><a href="https://twitter.com/mooremtech" target="_blank" title="Twitter">Twitter</a></li>
+        <li class="linkedin">
+          <a href="http://www.linkedin.com/company/moorem-technologies-pvt-ltd" target="_blank" title="Linkedin">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+    <nav>
+      <ul class="nav nav-pills nav-main" id="mainMenu">
+        <% if params[:controller] == 'home' %>
+          <li class="active">
+            <%= link_to "Home", root_path %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+        <% end %>
+        <li>
+          <%= link_to "Team", team_pages_path %>
+        </li>
+        <li>
+          <%= link_to "Contact Us", contact_pages_path %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

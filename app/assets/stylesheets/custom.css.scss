@@ -1,0 +1,21 @@
+/* Add here all your CSS customizations */
+.offset1{
+  margin-left: 95px;
+}
+.clear{
+  clear: both;
+}
+hr.tall {
+  padding-bottom: 40px;
+  position: relative;
+  top:45px;
+}
+hr {
+  background: image_url('divider.png') no-repeat scroll center 0 rgba(0, 0, 0, 0) !important;
+  border: 0 none !important;
+  height: 6px !important;
+  margin: 22px 0 !important;
+}
+footer div.footer-ribon:before{
+  left: -10px !important;
+}
