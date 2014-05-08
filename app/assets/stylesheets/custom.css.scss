@@ -19,3 +19,104 @@ hr {
 footer div.footer-ribon:before{
   left: -10px !important;
 }
+label{
+  font-weight: normal !important;
+}
+li{
+  list-style: none;
+}
+.navbar-nav.navbar-right:last-child {
+  margin-right: 10px !important;
+}
+.navbar{
+  margin-bottom: 0px !important;
+}
+.navbar-default .navbar-nav > li > a{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  color: #0088CC !important;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active {
+  background-color: #0088CC !important;
+  color: #FFFFFF !important;
+}
+.navbar-default {
+  background-color: #ffffff !important;
+  border-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #0088CC !important;
+  color: #FFFFFF !important;
+}
+header, div.slider-container, div.slider-container div.slider, div.slider-container > div.slider > div.tp-bannertimer, div.home-intro, div.home-concept, section.highlight, section.featured, section.featured.footer, section.page-top, footer, div.footer-copyright, div.google-map, div.map-section, .parallax{
+  margin:0px !important;
+}
+#map_wrapper {
+  height: 400px;
+}
+
+#map_canvas {
+  width: 100%;
+  height: 100%;
+}
+#tweets{
+  margin-left: -10px;
+}
+#tweets li:before {
+  color: #ffffff;
+  content: "";
+  float: left;
+  font-family: FontAwesome;
+  font-size: 16px;
+  margin: 0 0 0 -28px;
+}
+#tweets li{
+  color: #ffffff;
+}
+
+
+@media (max-width: 1200px){
+  .offset1{
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1000px){
+  .offset1{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 720px){
+  .offset1{
+    margin-left: 0px;
+  }
+  .round_images{
+    text-align: center;
+  }
+  .div.home-concept{
+    background: none;
+  }
+  .round_images .col-xs-2{
+    float: none;
+    text-align: center;
+  }
+  .round_images .col-xs-4{
+    float: none;
+    text-align: center;
+  }
+  .flexslider .slides img {
+    display: inline-table !important;
+    width: auto !important;
+  }
+}

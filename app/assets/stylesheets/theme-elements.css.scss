@@ -40,7 +40,7 @@ h3 {
 }
 
 h4 {
-	color: #0088CC;
+	color: #0088CC !important;
 	font-size: 1.4em;
 	font-weight: 400;
 	letter-spacing: normal;
@@ -417,7 +417,7 @@ a.thumb-info span.thumb-info-title {
 a.thumb-info span.thumb-info-type {
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
-	background-color: #CCC;
+	background-color: #0088CC;
 	border-radius: 2px;
 	display: inline-block;
 	float: left;
@@ -473,7 +473,7 @@ span.thumb-info-social-icons {
 span.thumb-info-social-icons a {
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
-	background: #CCC;
+	background: #0088CC;
 	border-radius: 25px;
 	display: inline-block;
 	height: 30px;
