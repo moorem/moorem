@@ -43,11 +43,11 @@
        <% end %>
        <% if params[:controller] == 'pages' and params[:action] == 'contact' %>
          <li class="active">
-           <%= link_to "Contact Us", contact_pages_path %>
+           <%= link_to "Contact Us".html_safe, contact_pages_path %>
          </li>
        <% else %>
          <li>
-           <%= link_to "Contact Us", contact_pages_path %>
+           <%= link_to "Contact Us".html_safe, contact_pages_path %>
          </li>
        <% end %>
       </ul>

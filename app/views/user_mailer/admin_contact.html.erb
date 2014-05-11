@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+</head>
+<body>
+<h1>Dear Moorem Admin, </h1>
+
+<p>
+  <%= @contact.name %> has sent you an Message. Here is the short summary of the Message: <br/>
+</p>
+
+<p>
+  <strong>Contact Name :</strong> <%= @contact.name %><br/>
+  <strong>Contact Email : </strong><%= @contact.email %><br/>
+  <strong>Regarding :</strong> <%= @contact.subject %><br/>
+  <strong>Message : </strong><br/><%= @contact.message %><br/><br/>
+</p>
+
+
+</body>
+</html> 
