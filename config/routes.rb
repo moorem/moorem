@@ -19,6 +19,8 @@ Rails.application.routes.draw do
     collection do
       get :team
       get :contact
+      get :about
+      get :portfolio
       post :send_newsletter
     end
   end

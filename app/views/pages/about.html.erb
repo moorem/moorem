@@ -1,2 +1,72 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<div role="main" class="main">
+
+  <section class="page-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="breadcrumb">
+            <li><%= link_to "Home", root_path %> <span class="divider">/</span></li>
+            <li class="active">About Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>About Us</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="container">
+
+  <h2>The New Way to <strong>Success</strong></h2>
+
+  <div class="row">
+    <div class="col-md-10">
+      <p class="lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non <span class="alternative-font">metus.</span> pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eu risus enim, ut pulvinar lectus. Sed hendrerit nibh.
+      </p>
+    </div>
+    <div class="col-md-2">
+      <%= link_to 'Join Our Team!', contact_pages_path, class: "btn btn-large btn-primary pull-top" %>
+    </div>
+  </div>
+
+  <hr class="tall">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3><strong>Who</strong> We Are</h3>
+      <p><strong>Design. Development. Quality Assurance Strategy.</strong> We craft unique and cleanly designed, meticulously developed, content-rich websites that function on the desktop first and are compatible with every mobile device out there. Once we understand your business and its goals we’ll create an experience that helps your customers solve their problems and ensures that they keep coming back for more.</p>
+    </div>
+  </div>
+
+  <hr class="tall">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="pull-top">Our <strong>History</strong></h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <ul class="timeline">
+        <li data-appear-animation="fadeInUp">
+          <div class="thumb" data-appear-animation="fadeInRight">
+            <%= image_tag("project-img-3.jpg") %>
+          </div>
+          <div class="featured-box">
+            <div class="box-content">
+              <h4><strong>2013</strong></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus,</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>

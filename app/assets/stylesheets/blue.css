@@ -17,7 +17,7 @@ a:active {
 }
 
 .alternative-font {
-	color: #0088cc;
+	color: #0088cc !important;
 }
 
 .nav-pills > .active > a,
@@ -67,7 +67,7 @@ section.highlight {
 }
 
 section.page-top h2 {
-	border-bottom-color: #0088cc;
+	border-bottom-color: #0088cc !important;
 }
 
 section.toggle label {
@@ -90,7 +90,7 @@ div.feature-box div.feature-box-icon {
 }
 
 ul.timeline li div.featured-box div.box-content {
-	border-top-color: #0088cc;
+	border-top-color: #0088cc !important;
 }
 
 a.thumb-info span.thumb-info-type {
