@@ -17,12 +17,11 @@
       </div>
     </div>
   </section>
-
   <div class="container">
 
     <h2>Meet the <strong>Team</strong></h2>
 
-    <ul class="nav nav-pills sort-source" data-sort-id="team" data-option-key="filter">
+    <ul class="nav nav-pills sort-source" data-sort-id="team" data-option-key="filter" data-no-turbolink>
       <li data-option-value="*" class="active"><a href="#">Show All</a></li>
       <li data-option-value=".leadership"><a href="#">Leadership</a></li>
       <li data-option-value=".development"><a href="#">Development</a></li>
@@ -34,8 +33,8 @@
 
     <div class="row">
 
-      <ul class="team-list sort-destination" data-sort-id="team">
-        <li class="col-md-4 isotope-item leadership">
+      <ul class="team-list sort-destination" data-sort-id="team" data-no-turbolink>
+        <li class="col-md-3 isotope-item leadership">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
               <%= image_tag("team/thiyagarajan.jpg", :alt => "Thiyagarajan Veluchamy") %>
@@ -55,7 +54,7 @@
 									</span>
           </div>
         </li>
-        <li class="col-md-4 isotope-item leadership">
+        <li class="col-md-3 isotope-item leadership">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
               <%= image_tag("team/ankurgupta.jpg", :alt => "Ankur Gupta") %>
@@ -74,7 +73,7 @@
 									</span>
           </div>
         </li>
-        <li class="col-md-4 isotope-item development">
+        <li class="col-md-3 isotope-item development">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
               <%= image_tag("team/nagarjuna.jpg", :alt => "Nagarjuna Yadav") %>
@@ -93,7 +92,7 @@
 									</span>
           </div>
         </li>
-        <li class="col-md-4 isotope-item design">
+        <li class="col-md-3 isotope-item design">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
               <%= image_tag("team/rahulgupta.jpg", :alt => "Rahul Gupta") %>
@@ -112,10 +111,10 @@
 									</span>
           </div>
         </li>
-        <li class="col-md-4 isotope-item development">
+        <li class="col-md-3 isotope-item development">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
-              <%= image_tag("team/pavitrakumarsingh.jpg" , :alt => "Pavitra kumar singh") %>
+              <%= image_tag("team/pavitrakumarsingh.jpg", :alt => "Pavitra Kumar Singh") %>
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Pavitra Kumar Singh</span>
 											<span class="thumb-info-type">Ruby/Java developer</span>
@@ -131,10 +130,10 @@
 									</span>
           </div>
         </li>
-        <li class="col-md-4 isotope-item development">
+        <li class="col-md-3 isotope-item development">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
-              <%= image_tag("team/sivamanoharreddy.jpg" , :alt => "Siva manohar reddy") %>
+              <%= image_tag("team/sivamanoharreddy.jpg", :alt => "V. Siva Manohar Reddy") %>
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">V. Siva Manohar Reddy</span>
 											<span class="thumb-info-type">Ruby/Java developer</span>
@@ -150,10 +149,10 @@
 									</span>
           </div>
         </li>
-        <li class="col-md-4 isotope-item testing">
+        <li class="col-md-3 isotope-item testing">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
-             <%= image_tag("team/vimalkhatri.jpg" , :alt => "Vimal khatri") %>
+              <%= image_tag("team/vimalkhatri.jpg", :alt => "Vimal Khatri") %>
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Vimal Khatri</span>
 											<span class="thumb-info-type">Tester/System Administrator</span>
@@ -169,10 +168,10 @@
 									</span>
           </div>
         </li>
-        <li class="col-md-4 isotope-item development">
+        <li class="col-md-3 isotope-item development">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
-              <%= image_tag("team/prashantkumarswain.jpg" , :alt => "Prasanta kumar" ) %>
+              <%= image_tag("team/prashantkumarswain.jpg", :alt => "Prasanta Kumar") %>
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Prasanta Kumar</span>
 											<span class="thumb-info-type">Trainee RoR Developer</span>
@@ -193,5 +192,4 @@
     </div>
 
   </div>
-
 </div>
