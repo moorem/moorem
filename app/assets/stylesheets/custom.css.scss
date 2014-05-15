@@ -120,3 +120,15 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
     width: auto !important;
   }
 }
+
+@media (max-width: 720px){
+  .thumbnail > img, .thumbnail a > img{
+    width: 100%;
+  }
+  .home-concept{
+    display: none !important;
+  }
+  .social-icons.pull-right{
+    float: none !important;
+  }
+}

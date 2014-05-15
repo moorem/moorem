@@ -37,7 +37,7 @@
         <li class="col-md-3 isotope-item leadership">
           <div class="team-item thumbnail">
             <a href="#" class="thumb-info team">
-              <%= image_tag("team/thiyagarajan.jpg", :alt => "Thiyagarajan Veluchamy") %>
+              <%= image_tag("team/thiyagarajan.jpg", :alt => "Thiyagarajan Veluchamy", :class=> 'img-responsive') %>
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Thiyagarajan Veluchamy</span>
 											<span class="thumb-info-type">Ruby/PHP developer/Designer</span>
@@ -193,3 +193,18 @@
 
   </div>
 </div>
+
+<style>
+  @media  (min-width:1000px) {
+    ul .col-md-3{
+      width: 23% !important;
+      padding: 0px;
+      margin: 0px 5px;
+    }
+  }
+  @media  (max-width:1000px) {
+    ul .col-md-3{
+      width: 100%;
+    }
+  }
+</style>
