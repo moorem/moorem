@@ -135,6 +135,12 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
     margin-top: 10px;
   }
 }
+
+@media (max-width: 356px){
+  div.flexslider-top-title ul.flex-direction-nav{
+    display:none !important;
+  }
+}
 textarea{
   resize: none !important;
 }
