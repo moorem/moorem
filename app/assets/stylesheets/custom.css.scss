@@ -125,14 +125,20 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
   .thumbnail > img, .thumbnail a > img{
     width: 100%;
   }
-  .home-concept{
+ /* .home-concept{
     display: none !important;
-  }
+  }*/
   .social-icons.pull-right{
     float: none !important;
   }
   .btn-mobile{
     margin-top: 10px;
+  }
+  .home-concept .project-image {
+    background-position: 0 0 !important;
+    margin-left: auto !important;
+    max-height: 220px;
+    max-width: 160px;
   }
 }
 
@@ -143,4 +149,11 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
 }
 textarea{
   resize: none !important;
+}
+
+div.home-concept div.process-image, div.home-concept div.project-image{
+  margin: 0 auto !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #0088CC !important;
 }

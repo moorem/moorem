@@ -12,16 +12,7 @@
     </div>
 
     <div class="navbar-collapse collapse">
-      <div class="social-icons pull-right" style="margin-top: 15px;">
-        <ul class="social-icons">
-          <li class="facebook"><a href="https://www.facebook.com/mooremtech" target="_blank" title="Facebook">Facebook</a>
-          </li>
-          <li class="twitter"><a href="https://twitter.com/mooremtech" target="_blank" title="Twitter">Twitter</a></li>
-          <li class="linkedin">
-            <a href="http://www.linkedin.com/company/moorem-technologies-pvt-ltd" target="_blank" title="Linkedin">Linkedin</a>
-          </li>
-        </ul>
-      </div>
+
      <ul class="nav navbar-nav navbar-right" style="margin-top: 15px;">
        <% if params[:controller] == 'home' %>
          <li class="active">
@@ -68,6 +59,18 @@
            <%= link_to "Contact Us".html_safe, contact_pages_path %>
          </li>
        <% end %>
+       <li>
+         <div class="social-icons" style="padding-left:20px;">
+           <ul class="social-icons">
+             <li class="facebook"><a href="https://www.facebook.com/mooremtech" target="_blank" title="Facebook">Facebook</a>
+             </li>
+             <li class="twitter"><a href="https://twitter.com/mooremtech" target="_blank" title="Twitter">Twitter</a></li>
+             <li class="linkedin">
+               <a href="http://www.linkedin.com/company/moorem-technologies-pvt-ltd" target="_blank" title="Linkedin">Linkedin</a>
+             </li>
+           </ul>
+         </div>
+       </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
