@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+
+  caches_page :team, :about, :services, :portfolio
+
   def team
   end
 
