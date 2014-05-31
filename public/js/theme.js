@@ -21,13 +21,13 @@ var Core = {
 	build: function() {
 
 		// Adds browser version on html class.
-		$.browserSelector();
+		//$.browserSelector();
 
 		// Scroll to Top Button.
-		$.scrollToTop();
+		//$.scrollToTop();
 
 		// Responsive Navigation.
-		selectnav("mainMenu");
+		//selectnav("mainMenu");
 
 		// Header Search
 		this.headerSearch();
@@ -89,7 +89,7 @@ var Core = {
 		});
 
 		// Submenu Check
-		$("#mainMenu li.dropdown-submenu").hover(function() {
+		/*$("#mainMenu li.dropdown-submenu").hover(function() {
 
 			var subMenu = $(this).find("ul.dropdown-menu");
 
@@ -107,7 +107,7 @@ var Core = {
 				subMenu.css("margin-left", 0);
 			}
 
-		});
+		});*/
 
 		// Anchors Position
 		$("a[data-hash]").on("click", function(e) {
