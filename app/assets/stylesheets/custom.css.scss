@@ -95,6 +95,9 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
   .offset1{
     margin-left: 20px;
   }
+  div.home-concept div.process-image, div.home-concept div.project-image{
+    margin: 0 auto !important;
+  }
 }
 
 @media (max-width: 720px){
@@ -118,6 +121,12 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
   .flexslider .slides img {
     display: inline-table !important;
     width: auto !important;
+  }
+
+  div.home-concept div.fc-slideshow,
+  div.home-concept div.fc-slideshow img {
+    max-height: 145px;
+    max-width: 145px;
   }
 }
 
@@ -151,9 +160,7 @@ textarea{
   resize: none !important;
 }
 
-div.home-concept div.process-image, div.home-concept div.project-image{
-  margin: 0 auto !important;
-}
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #0088CC !important;
 }
