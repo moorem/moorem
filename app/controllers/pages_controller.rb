@@ -23,8 +23,8 @@ class PagesController < ApplicationController
     @contact = Contact.new(params[:contact])
       if @contact.valid?
         @contact.save
-        #UserMailer.contact(@contact).deliver
-        #UserMailer.admin_contact(params[:uploaded_document],@contact).deliver
+        UserMailer.contact(@contact).deliver
+        UserMailer.admin_contact(params[:uploaded_document],@contact).deliver
         respond_to do |format|
           format.js
         end
