@@ -57,7 +57,7 @@ var Core = {
 		this.latestTweets();
 
 		// Flickr Feed
-		this.flickrFeed();
+		//this.flickrFeed();
 
 		// Lightbox
 		this.lightbox();
@@ -607,7 +607,7 @@ var Core = {
 
 	},
 
-	flickrFeed: function(options) {
+	/*flickrFeed: function(options) {
 
 		$("ul.flickr-feed").each(function() {
 
@@ -647,7 +647,7 @@ var Core = {
 
 		});
 
-	},
+	},*/
 
 	parallax: function() {
 

@@ -21,6 +21,7 @@ Rails.application.routes.draw do
       get :contact
       get :about
       get :portfolio
+      get :career
       post :send_newsletter
     end
   end

@@ -71,8 +71,8 @@ section.page-top h2 {
 }
 
 section.toggle label {
-	color: #0088cc;
-	border-left-color: #0088cc;
+	color: #0088cc !important;
+	border-left-color: #0088cc !important;
 }
 
 section.toggle.active > label {
@@ -128,7 +128,7 @@ div.tabs ul.nav-tabs li.active a {
 }
 
 ul.list.icons li i {
-	color: #0088cc;
+	color: #0088cc !important;
 }
 
 i.icon-featured {

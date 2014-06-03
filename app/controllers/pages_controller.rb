@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def services
+  def career
   end
 
   def portfolio
