@@ -7,14 +7,13 @@ class UserMailer < ActionMailer::Base
   end
 
   def admin_contact(uploaded_file,con)
-
+    @contact = con
     attachments[uploaded_file.original_filename] = {
         content:  uploaded_file.read,
         mime_type: uploaded_file.content_type
     }unless uploaded_file.nil?
 
-    @contact = con
-    mail(from: @contact.email, to: "contact@moorem.com", subject: "[Moorem] - #{@contact.subject} from #{@contact.name}")
+    mail(from: @contact.email, to: "siva@moorem.com", subject: "[Moorem] - #{@contact.subject} from #{@contact.name}")
   end
 
   def newsletter_user(newsletter)
@@ -24,6 +23,6 @@ class UserMailer < ActionMailer::Base
 
   def newsletter_admin(newsletter)
     @newsletter = newsletter
-    mail(from: @newsletter.email,to: "contact@moorem.com", subject: "[Moorem] - #{@newsletter.email} has subscribed for NewsLetter")
+    mail(from: @newsletter.email,to: "pavitra@moorem.com", subject: "[Moorem] - #{@newsletter.email} has subscribed for NewsLetter")
   end
 end

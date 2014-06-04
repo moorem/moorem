@@ -16,24 +16,9 @@
         </div>
 
         <div class="alert alert-error hidden" id="newsletterError"></div>
-        <%= form_for Newsletter.new, :url => send_newsletter_pages_path, :html => {:class => 'form-inline', :id => 'newsletterForm'} do |f| %>
-          <fieldset>
-            <div class="control-group">
-              <div class="input-append">
-                <%= f.email_field :email, :class => 'form-control', :id => 'email', required: true, placeholder: 'Please Enter Your Email',:style=>'width: auto; float: left; margin-right: 10px;' %>
-                <!--<input class="form-control" placeholder="Email Address" name="email" id="email" type="text">-->
-                <button class="btn btn-mobile" type="submit" style="margin: 0px;">Go!</button>
-              </div>
-            </div>
-          </fieldset>
-          <div class="success alert-success alert" style="display:none">Your message has been sent successfully.
-          </div>
-          <div class="error alert-error alert" style="display:none">E-mail must be valid and message must be longer
-            than 100 characters.
-          </div>
-          <div class="clearfix">
-          </div>
-        <% end %>
+        <div id="newsletter_replace">
+          <%= render :partial => 'pages/newsletter_form' %>
+        </div>
       </div>
       <div class="col-md-3">
         <h4>Latest Tweet</h4>

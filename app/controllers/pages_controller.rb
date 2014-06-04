@@ -25,19 +25,19 @@ class PagesController < ApplicationController
         @contact.save
         UserMailer.contact(@contact).deliver
         UserMailer.admin_contact(params[:contact][:uploaded_document],@contact).deliver
-        #respond_to do |format|
-        #  format.js
-        #end
+        respond_to do |format|
+          format.js
+        end
       else
         render 'contact'
       end
   end
 
   def send_newsletter
-    @newsletter = Newsletter.create(:email => params[:email])
+    @newsletter = Newsletter.new(:email => params[:email])
     if @newsletter.valid?
       @newsletter.save
-      redirect_to root_url, notice: 'Thanks for registering to our Newsletter.Plese check your Email.'
+     # redirect_to root_url, notice: 'Thanks for registering to our Newsletter.Plese check your Email.'
       UserMailer.newsletter_user(@newsletter).deliver
       UserMailer.newsletter_admin(@newsletter).deliver
     else
