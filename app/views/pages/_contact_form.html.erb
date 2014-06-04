@@ -36,14 +36,17 @@
     <div class="row" style="margin-top: 10px;">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <label>Upload : (Please upload either MS Word or PDF Document)</label>
-        <%= f.file_field :uploaded_document %>
+        <%= f.file_field :uploaded_document,accept: "application/pdf" %>
         <!--<textarea class="form-control" id="text" name="text" rows="3" cols="40" required></textarea>-->
       </div>
     </div>
 
   </fieldset>
   <div class="btn-toolbar" style="margin-top: 10px;">
-    <button class="btn btn-large btn-primary" type="submit">Send</button>
+    <button class="btn btn-large btn-primary pull-left" type="submit" style= "margin-right: 15px">Send</button>
+    <div id="spinner" style="display: none; z-index: 100;">
+      <%=image_tag("loader.gif")  %>
+    </div>
   </div>
   <div class="success alert-success alert" style="display:none">Your message has been sent successfully.
   </div>
@@ -53,10 +56,17 @@
   <div class="clearfix">
   </div>
 <% end %>
+
 <script type="text/javascript">
   $(document).ready(function(){
     setTimeout(function(){
       $('#sucess_alert').remove();
-    }, 500);
+    }, 5000);
   })
+  $(document).ajaxStart(function(){
+    $("#spinner").show();
+  });
+  $( document ).ajaxStop(function() {
+    $("#spinner").hide();
+  });
 </script>
