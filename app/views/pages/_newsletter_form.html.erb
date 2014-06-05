@@ -3,9 +3,12 @@
   <fieldset>
     <div class="control-group">
       <div class="input-append">
-        <%= text_field_tag :email, nil, :class => 'form-control', :id => 'email', required: true, placeholder: 'Please Enter Your Email',:style=>'width: auto; float: left; margin-right: 10px;' %>
+        <%= text_field_tag :email, nil, :class => 'form-control', :id => 'email', required: true, placeholder: 'Please Enter Your Email',:style=>'width: auto; float: left; margin-right: 5px;' %>
         <!--<input class="form-control" placeholder="Email Address" name="email" id="email" type="text">-->
         <button class="btn btn-mobile" type="submit" style="margin: 0px;">Go!</button>
+        <div id="spinner_footer" style="display: none; z-index: 100;">
+          <%=image_tag("loader2.gif")  %>
+        </div>
       </div>
     </div>
   </fieldset>
@@ -23,4 +26,11 @@
       $('#sucess_alert_newsletter').remove();
     }, 5000);
   })
+
+  $(document).ajaxStart(function(){
+    $("#spinner_footer").show();
+  });
+  $( document ).ajaxStop(function() {
+    $("#spinner_footer").hide();
+  });
 </script>
