@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+gem 'rake', '10.3.2'
 
 # Use actionpack-page_caching for page_caching
 gem 'actionpack-page_caching'
