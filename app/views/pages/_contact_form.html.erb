@@ -36,7 +36,7 @@
     <div class="row" style="margin-top: 10px;">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <label>Upload : (Please upload either MS Word or PDF Document)</label>
-        <%= f.file_field :uploaded_document,accept: "application/pdf" %>
+        <%= f.file_field :uploaded_document, :onchange =>"validateFiles(this);",:data => {:max_file_size => 5.megabytes} %>
         <!--<textarea class="form-control" id="text" name="text" rows="3" cols="40" required></textarea>-->
       </div>
     </div>
@@ -69,4 +69,31 @@
   $( document ).ajaxStop(function() {
     $("#spinner").hide();
   });
+  function validateFiles(inputFile) {
+    $('#size_error').remove();
+    $('#extention_error').remove();
+    var maxExceededMessage = "This file exceeds the maximum allowed file size (5 MB)";
+    var extErrorMessage = "Only pdf and doc file is allowed";
+    var allowedExtension = ["docx","doc","pdf"];
+
+    var extName;
+    var maxFileSize = $(inputFile).data('max-file-size');
+    var sizeExceeded = false;
+    var extError = false;
+
+    $.each(inputFile.files, function() {
+      if (this.size && maxFileSize && this.size > parseInt(maxFileSize)) {sizeExceeded=true;};
+      extName = this.name.split('.').pop();
+      if ($.inArray(extName, allowedExtension) == -1) {extError=true;};
+    });
+    if (sizeExceeded) {
+      $('#contact_uploaded_document').after("<label id=size_error style=display:block;color:red;font-weight: bold;>Should not exceed more than 5 MB </label>");
+      $(inputFile).val('');
+    };
+
+    if (extError) {
+      $('#contact_uploaded_document').after("<label id=extention_error style=display:block;color:red;font-weight: bold;>Please choose valid extention file </label>");
+      $(inputFile).val('');
+    };
+  }
 </script>

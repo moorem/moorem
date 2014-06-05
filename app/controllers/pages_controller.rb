@@ -37,7 +37,6 @@ class PagesController < ApplicationController
     @newsletter = Newsletter.new(:email => params[:email])
     if @newsletter.valid?
       @newsletter.save
-     # redirect_to root_url, notice: 'Thanks for registering to our Newsletter.Plese check your Email.'
       UserMailer.newsletter_user(@newsletter).deliver
       UserMailer.newsletter_admin(@newsletter).deliver
     else
