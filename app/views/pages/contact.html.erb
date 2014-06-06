@@ -25,11 +25,70 @@
 
   <div class="container">
     <div class="row">
-
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %><a class="close" data-dismiss="alert">&#215;</a></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %><a class="close" data-dismiss="alert">&#215;</a></p>
+      <% end %>
       <div class="col-md-6" id="career">
         <h2 class="short"><strong>Contact</strong> Us</h2>
         <div id="contact_replace">
-          <%= render :partial => 'pages/contact_form' %>
+          <%= form_for @contact,  :multipart => true, :url => pages_path, :html => {:class => 'reply' } do |f| %>
+            <fieldset>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <label>Name: <span style="color: #ff0000;">*</span></label>
+                  <%= f.text_field :name, :class => 'form-control', :id => 'name', required: true, placeholder: 'Please Enter Your Name' %>
+                  <!--<input class="form-control" id="name" name="name" type="text" value="" required>-->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <label>Email: <span style="color: #ff0000;">*</span></label>
+                  <%= f.email_field :email, :class => 'form-control', :id => 'email', required: true, placeholder: 'Please Enter Your Email' %>
+                  <!--<input class="form-control" type="email" id="email" name="email" value="" required>-->
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 10px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <label>Subject: <span style="color: #ff0000;">*</span></label>
+                  <%= f.select(:subject, [['--- PLEASE SELECT ---', ''], ['General Inquiry', 'General Inquiry'], ['Project Quotation', 'Project Quotation'], ['Post Your Resume', 'Post Your Resume']], {}, :class => 'form-control') %>
+                  <!--<input class="form-control" id="subject" name="subject" type="text" value="" required>-->
+                </div>
+              </div>
+              <br/>
+
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <label>Message: <span style="color: #ff0000;">*</span></label>
+                  <%= f.text_area :message, :class => 'form-control', :id => 'message', rows: 3, cols: 40, required: true, placeholder: 'Please Enter Your Message' %>
+                  <!--<textarea class="form-control" id="text" name="text" rows="3" cols="40" required></textarea>-->
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 10px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <label>Upload : (Please upload either MS Word or PDF Document)</label>
+                  <%= f.file_field :uploaded_document, :onchange =>"validateFiles(this);",:data => {:max_file_size => 5.megabytes} %>
+                  <!--<textarea class="form-control" id="text" name="text" rows="3" cols="40" required></textarea>-->
+                </div>
+              </div>
+
+            </fieldset>
+            <div class="btn-toolbar" style="margin-top: 10px;">
+              <button class="btn btn-large btn-primary pull-left" type="submit" style= "margin-right: 15px">Send</button>
+              <div id="spinner" style="display: none; z-index: 100;">
+                <%=image_tag("loader.gif")  %>
+              </div>
+            </div>
+            <div class="success alert-success alert" style="display:none">Your message has been sent successfully.
+            </div>
+            <div class="error alert-error alert" style="display:none">E-mail must be valid and message must be longer
+              than 100 characters.
+            </div>
+            <div class="clearfix">
+            </div>
+          <% end %>
         </div>
       </div>
       <div class="col-md-6">
@@ -70,10 +129,6 @@
   </div>
 
 </div>
-
-
-
-
 <script>
   jQuery(function($) {
     // Asynchronously Load the map API
@@ -141,5 +196,32 @@
       google.maps.event.removeListener(boundsListener);
     });
 
+    function validateFiles(inputFile) {
+      $('#size_error').remove();
+      $('#extention_error').remove();
+      var maxExceededMessage = "This file exceeds the maximum allowed file size (5 MB)";
+      var extErrorMessage = "Only pdf and doc file is allowed";
+      var allowedExtension = ["docx","doc","pdf"];
+
+      var extName;
+      var maxFileSize = $(inputFile).data('max-file-size');
+      var sizeExceeded = false;
+      var extError = false;
+
+      $.each(inputFile.files, function() {
+        if (this.size && maxFileSize && this.size > parseInt(maxFileSize)) {sizeExceeded=true;};
+        extName = this.name.split('.').pop();
+        if ($.inArray(extName, allowedExtension) == -1) {extError=true;};
+      });
+      if (sizeExceeded) {
+        $('#contact_uploaded_document').after("<label id=size_error style=display:block;color:red;font-weight: bold;>Should not exceed more than 5 MB </label>");
+        $(inputFile).val('');
+      };
+
+      if (extError) {
+        $('#contact_uploaded_document').after("<label id=extention_error style=display:block;color:red;font-weight: bold;>Please choose valid extention file </label>");
+        $(inputFile).val('');
+      };
+    }
   }
 </script>

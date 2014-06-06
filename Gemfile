@@ -3,10 +3,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+gem 'rake', '10.3.2'
 
 # Use actionpack-page_caching for page_caching
 gem 'actionpack-page_caching'
-gem 'remotipart', '~> 1.2'
 
 # Using protected_attributes for attr_accessible method
 gem 'protected_attributes', '1.0.5'
