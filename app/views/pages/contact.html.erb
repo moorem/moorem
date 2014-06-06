@@ -61,7 +61,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <label>Message: <span style="color: #ff0000;">*</span></label>
-                  <%= f.text_area :message, :class => 'form-control', :id => 'message', rows: 3, cols: 40, required: true, placeholder: 'Please Enter Your Message' %>
+                  <%= f.text_area :message,  :class => 'form-control', :id => 'message', rows: 3, cols: 40, required: true, placeholder: 'Please Enter Your Message' %>
                   <!--<textarea class="form-control" id="text" name="text" rows="3" cols="40" required></textarea>-->
                 </div>
               </div>
@@ -129,7 +129,7 @@
   </div>
 
 </div>
-<script>
+<script type="text/javascript">
   jQuery(function($) {
     // Asynchronously Load the map API
     var script = document.createElement('script');
@@ -195,33 +195,32 @@
       this.setZoom(4);
       google.maps.event.removeListener(boundsListener);
     });
+  }
+  function validateFiles(inputFile) {
+    $('#size_error').remove();
+    $('#extention_error').remove();
+    var maxExceededMessage = "This file exceeds the maximum allowed file size (5 MB)";
+    var extErrorMessage = "Only pdf and doc file is allowed";
+    var allowedExtension = ["docx","doc","pdf"];
 
-    function validateFiles(inputFile) {
-      $('#size_error').remove();
-      $('#extention_error').remove();
-      var maxExceededMessage = "This file exceeds the maximum allowed file size (5 MB)";
-      var extErrorMessage = "Only pdf and doc file is allowed";
-      var allowedExtension = ["docx","doc","pdf"];
+    var extName;
+    var maxFileSize = $(inputFile).data('max-file-size');
+    var sizeExceeded = false;
+    var extError = false;
 
-      var extName;
-      var maxFileSize = $(inputFile).data('max-file-size');
-      var sizeExceeded = false;
-      var extError = false;
-
-      $.each(inputFile.files, function() {
-        if (this.size && maxFileSize && this.size > parseInt(maxFileSize)) {sizeExceeded=true;};
-        extName = this.name.split('.').pop();
-        if ($.inArray(extName, allowedExtension) == -1) {extError=true;};
-      });
-      if (sizeExceeded) {
-        $('#contact_uploaded_document').after("<label id=size_error style=display:block;color:red;font-weight: bold;>Should not exceed more than 5 MB </label>");
-        $(inputFile).val('');
-      };
-
-      if (extError) {
-        $('#contact_uploaded_document').after("<label id=extention_error style=display:block;color:red;font-weight: bold;>Please choose valid extention file </label>");
-        $(inputFile).val('');
-      };
+    $.each(inputFile.files, function() {
+      if (this.size && maxFileSize && this.size > parseInt(maxFileSize)) {sizeExceeded=true;};
+      extName = this.name.split('.').pop();
+      if ($.inArray(extName, allowedExtension) == -1) {extError=true;};
+    });
+    if (sizeExceeded) {
+      $('#contact_uploaded_document').after("<label id=size_error style=display:block;color:red;font-weight: bold;>Should not exceed more than 5 MB </label>");
+      $(inputFile).val('');
     }
+
+    else if (extError) {
+      $('#contact_uploaded_document').after("<label id=extention_error style=display:block;color:red;font-weight: bold;>Please choose valid extention file </label>");
+      $(inputFile).val('');
+    };
   }
 </script>
