@@ -196,17 +196,6 @@
       google.maps.event.removeListener(boundsListener);
     });
 
-    $(document).ready(function(){
-      setTimeout(function(){
-        $('#sucess_alert').remove();
-      }, 5000);
-    })
-    $(document).ajaxStart(function(){
-      $("#spinner").show();
-    });
-    $( document ).ajaxStop(function() {
-      $("#spinner").hide();
-    });
     function validateFiles(inputFile) {
       $('#size_error').remove();
       $('#extention_error').remove();
@@ -234,6 +223,5 @@
         $(inputFile).val('');
       };
     }
-
   }
 </script>
