@@ -26,8 +26,7 @@ class PagesController < ApplicationController
         @contact.save
         UserMailer.contact(@contact).deliver
         UserMailer.admin_contact(params[:contact][:uploaded_document],@contact).deliver
-        flash[:notice] = 'Your request has been sent'
-        redirect_to contact_pages_path
+        redirect_to contact_pages_path, flash: {:success => " Your request has been sent"}
       else
         render 'contact'
       end
