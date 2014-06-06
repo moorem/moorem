@@ -20,15 +20,15 @@
           <fieldset>
             <div class="control-group">
               <div class="input-append">
-                <%= f.email_field :email, :class => 'form-control', :id => 'email', required: true, placeholder: 'Please Enter Your Email',:style=>'width: auto; float: left; margin-right: 10px;' %>
+                <%= f.email_field :email, :class => 'form-control pull-left margin-right-10', :id => 'email', required: true, placeholder: 'Please Enter Your Email' %>
                 <!--<input class="form-control" placeholder="Email Address" name="email" id="email" type="text">-->
                 <button class="btn btn-mobile" type="submit">Go!</button>
               </div>
             </div>
           </fieldset>
-          <div class="success alert-success alert" style="display:none">Your message has been sent successfully.
+          <div class="success alert-success alert hidden">Your message has been sent successfully.
           </div>
-          <div class="error alert-error alert" style="display:none">E-mail must be valid and message must be longer
+          <div class="error alert-error alert hidden">E-mail must be valid and message must be longer
             than 100 characters.
           </div>
           <div class="clearfix">
@@ -78,7 +78,7 @@
           <%= link_to (image_tag("logo.png", :alt => "Moorem Technology", class: "logo img-responsive")), root_path %>
         </div>
         <div class="col-md-7 margin-top-18">
-          <p style="color: #FFFFFF;">© Copyright 2014 by Moorem Technologies Pvt. Ltd. All Rights Reserved.</p>
+          <p class="white">© Copyright 2014 by Moorem Technologies Pvt. Ltd. All Rights Reserved.</p>
         </div>
         <div class="col-md-4 margin-top-18">
           <nav id="sub-menu">
