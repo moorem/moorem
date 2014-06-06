@@ -43,7 +43,7 @@
                 </div>
               </div>
 
-              <div class="row" style="margin-top: 10px;">
+              <div class="row margin-top-10">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <label>Subject: <span class="red">*</span></label>
                   <%= f.select(:subject, [['--- PLEASE SELECT ---', ''], ['General Inquiry', 'General Inquiry'], ['Project Quotation', 'Project Quotation'], ['Post Your Resume', 'Post Your Resume']], {}, :class => 'form-control') %>
@@ -60,7 +60,7 @@
                 </div>
               </div>
 
-              <div class="row" style="margin-top: 10px;">
+              <div class="row margin-top-10">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <label>Upload : (Please upload either MS Word or PDF Document)</label>
                   <%= f.file_field :uploaded_document, :onchange =>"validateFiles(this);",:data => {:max_file_size => 5.megabytes} %>
@@ -69,11 +69,8 @@
               </div>
 
             </fieldset>
-            <div class="btn-toolbar" style="margin-top: 10px;">
-              <button class="btn btn-large btn-primary pull-left" type="submit" style= "margin-right: 15px">Send</button>
-              <div id="spinner" style="display: none; z-index: 100;">
-                <%=image_tag("loader.gif")  %>
-              </div>
+            <div class="btn-toolbar margin-top-10">
+              <button class="btn btn-large btn-primary pull-left" type="submit">Send</button>
             </div>
             <div class="success alert-success alert hidden">Your message has been sent successfully.
             </div>
