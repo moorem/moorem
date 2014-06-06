@@ -23,8 +23,10 @@ Rails.application.routes.draw do
       get :portfolio
       get :career
       post :send_newsletter
+      get "*path" => 'errors#routing'
     end
   end
+
 
   # Example resource route with options:
   #   resources :products do
