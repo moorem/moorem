@@ -141,7 +141,7 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
     float: none !important;
   }
   .btn-mobile{
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .home-concept .project-image {
     background-position: 0 0 !important;
@@ -154,6 +154,16 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
 @media (max-width: 356px){
   div.flexslider-top-title ul.flex-direction-nav{
     display:none !important;
+  }
+}
+
+@media (max-width: 480px){
+  ul.timeline li div.thumb {
+    display: none;
+  }
+
+  ul.timeline li div.featured-box {
+    margin-left: 0 !important;
   }
 }
 textarea{
@@ -193,7 +203,7 @@ textarea{
   margin-top: 15px !important;
 }
 .white{
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 .red{
   color: #ff0000;
@@ -207,6 +217,10 @@ textarea{
 .font-32{
   font-size: 32px;
 }
+.width-auto{
+  width: auto !important;
+}
+
 @media  (min-width:1000px) {
   ul .col-md-3{
     width: 23% !important;
