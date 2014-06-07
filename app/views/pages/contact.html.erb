@@ -48,6 +48,7 @@
                   <label>Subject: <span class="red">*</span></label>
                   <%= f.select(:subject, [['--- PLEASE SELECT ---', ''], ['General Inquiry', 'General Inquiry'], ['Project Quotation', 'Project Quotation'], ['Post Your Resume', 'Post Your Resume']], {}, :class => 'form-control') %>
                   <!--<input class="form-control" id="subject" name="subject" type="text" value="" required>-->
+                  <span style=color:red;"><%= @contact.errors[:subject].join(", ") %></span>
                 </div>
               </div>
               <br/>
@@ -210,7 +211,7 @@
     }
 
     else if (extError) {
-      $('#contact_uploaded_document').after("<label id=extention_error style=display:block;color:red;font-weight: bold;>Please choose valid extention file </label>");
+      $('#contact_uploaded_document').after("<label id=extention_error style=display:block;color:red;font-weight: bold;>Please choose valid extension file </label>");
       $(inputFile).val('');
     };
   }
