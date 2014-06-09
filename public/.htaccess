@@ -1,8 +1,9 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.moorem.com$ [NC]
+RewriteCond %{HTTP_HOST} !^31\.222\.162\.47
 RewriteRule ^(.*)$ http://www.moorem.com/$1 [L,R=301]
 
-
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
+RewriteRule .* – [F,L]
 
 
 # compress text, html, javascript, css, xml:
