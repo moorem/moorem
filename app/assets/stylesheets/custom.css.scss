@@ -71,6 +71,7 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
 }
 #tweets{
   margin-left: -10px;
+  overflow: hidden;
 }
 #tweets li:before {
   color: #ffffff;
@@ -238,4 +239,10 @@ textarea{
   ul .col-md-3{
     width: 100%;
   }
+}
+
+.text-alignmen {
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 5px !important;
 }
