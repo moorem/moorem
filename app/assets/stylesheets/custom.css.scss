@@ -71,6 +71,7 @@ header, div.slider-container, div.slider-container div.slider, div.slider-contai
 }
 #tweets{
   margin-left: -10px;
+  overflow: hidden;
 }
 #tweets li:before {
   color: #ffffff;
@@ -199,8 +200,14 @@ textarea{
 .padding-left-20{
   padding-left:20px;
 }
+.padding-top-25{
+  padding-top:25px;
+}
 .margin-top-15{
   margin-top: 15px !important;
+}
+.margin-bottom-35{
+  margin-bottom: 35px !important;
 }
 .white{
   color: #FFFFFF !important;
@@ -232,4 +239,10 @@ textarea{
   ul .col-md-3{
     width: 100%;
   }
+}
+
+.text-alignmen {
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 5px !important;
 }
