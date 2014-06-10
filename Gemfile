@@ -12,6 +12,11 @@ gem 'actionpack-page_caching'
 gem 'protected_attributes', '1.0.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem "cancan"
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

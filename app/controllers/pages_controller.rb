@@ -41,7 +41,7 @@ class PagesController < ApplicationController
       flash[:notice] = 'Your request has been sent'
       redirect_to root_url
     else
-      redirect_to root_url, error: 'Please enter valid Email.'
+      redirect_to root_url
     end
   end
 end
