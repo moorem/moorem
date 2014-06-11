@@ -1,3 +1,4 @@
+set :stage, :production
 set :deploy_to, '/home/moorem/public_html/moorem'
 set :tmp_dir, '/home/moorem/public_html/moorem/tmp'
 
@@ -7,9 +8,9 @@ set :tmp_dir, '/home/moorem/public_html/moorem/tmp'
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
-role :app, %w{moorem@31.222.162.47}
-role :web, %w{moorem@31.222.162.47}
-role :db,  %w{moorem@31.222.162.47}
+role :app, %w{moorem@107.170.92.117}
+role :web, %w{moorem@107.170.92.117}
+role :db,  %w{moorem@107.170.92.117}
 
 # Extended Server Syntax
 # ======================
@@ -17,7 +18,7 @@ role :db,  %w{moorem@31.222.162.47}
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server '31.222.162.47', user: 'moorem', roles: %w{web app}, my_property: :my_value
+server '107.170.92.117', user: 'moorem', roles: %w{web app}, my_property: :my_value
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
@@ -29,7 +30,7 @@ set :ssh_options, {
     auth_methods: %w(password)
   }
 # and/or per server
-server '31.222.162.47',
+server '107.170.92.117',
    user: 'moorem',
    roles: %w{web app},
    ssh_options: {
@@ -37,7 +38,7 @@ server '31.222.162.47',
 #     keys: %w(/home/user_name/.ssh/id_rsa),
 #     forward_agent: false,
 #     auth_methods: %w(publickey password)
-     password: 'test1234'
+     password: 'moorem@2013'
    }
 # setting per server overrides global ssh_options
 set :rails_env, 'production'
