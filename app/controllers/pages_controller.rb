@@ -32,16 +32,4 @@ class PagesController < ApplicationController
       end
   end
 
-  def send_newsletter
-    @newsletter = Newsletter.new(:email => params[:email])
-    if @newsletter.valid?
-      @newsletter.save
-      UserMailer.newsletter_user(@newsletter).deliver
-      UserMailer.newsletter_admin(@newsletter).deliver
-      flash[:notice] = 'Your request has been sent'
-      redirect_to root_url
-    else
-      redirect_to root_url, error: 'Please enter valid Email.'
-    end
-  end
 end

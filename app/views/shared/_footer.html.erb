@@ -6,36 +6,6 @@
         <span>Get in Touch</span>
       </div>
       <div class="col-md-3">
-        <h4>Newsletter</h4>
-
-        <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our
-          newsletter.</p>
-
-        <div class="alert alert-success hidden" id="newsletterSuccess">
-          <strong>Success!</strong> You've been added to our email list.
-        </div>
-
-        <div class="alert alert-error hidden" id="newsletterError"></div>
-        <%= form_for :Newsletter, :url => send_newsletter_pages_path, :html => {:class => 'form-inline', :id => 'newsletterForm'} do |f| %>
-          <fieldset>
-            <div class="control-group">
-              <div class="input-append">
-                <%= f.email_field :email, :class => 'form-control pull-left margin-right-4 width-auto', :id => 'email', placeholder: 'Please Enter Your Email' %>
-                <!--<input class="form-control" placeholder="Email Address" name="email" id="email" type="text">-->
-                <button class="btn btn-mobile" type="submit">Go!</button>
-              </div>
-            </div>
-          </fieldset>
-          <div class="success alert-success alert hidden">Your message has been sent successfully.
-          </div>
-          <div class="error alert-error alert hidden">E-mail must be valid and message must be longer
-            than 100 characters.
-          </div>
-          <div class="clearfix">
-          </div>
-        <% end %>
-      </div>
-      <div class="col-md-3">
         <h4>Latest Tweet</h4>
 
         <div id="tweets"></div>
