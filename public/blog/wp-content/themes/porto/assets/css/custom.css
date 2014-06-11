@@ -91,3 +91,18 @@ div.wpcf7 .placeheld {
 .portfolio-list a.thumb-info img {
     width: 100%;
 }
+.logo{
+	float:left;
+}
+.social-icons{
+	float:right;
+	margin-top:20px;
+}
+.custom-nav{
+	float:right;
+}
+@media(max-width:978px){
+	.custom-nav{
+		float:none !important;
+	}
+}
