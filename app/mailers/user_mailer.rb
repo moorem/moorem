@@ -16,13 +16,4 @@ class UserMailer < ActionMailer::Base
     mail(from: @contact.email, to: "contact@moorem.com", subject: "[Moorem] - #{@contact.subject} from #{@contact.name}")
   end
 
-  def newsletter_user(newsletter)
-    @newsletter = newsletter
-    mail(to: @newsletter.email, subject: 'Thanks for subscribing to our NewsLetter')
-  end
-
-  def newsletter_admin(newsletter)
-    @newsletter = newsletter
-    mail(from: @newsletter.email,to: "contact@moorem.com", subject: "[Moorem] - #{@newsletter.email} has subscribed for NewsLetter")
-  end
 end
