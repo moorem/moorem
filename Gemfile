@@ -49,3 +49,5 @@ gem 'capistrano-rails', group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass', '~> 3.1.1.1'
 gem 'font-awesome-rails', '~> 4.0.3.2'
+
+gem 'acts_as_textcaptcha'

@@ -9,6 +9,7 @@ class PagesController < ApplicationController
 
   def contact
     @contact = Contact.new
+    @contact.textcaptcha
   end
 
   def about
