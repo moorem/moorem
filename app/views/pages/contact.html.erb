@@ -72,9 +72,9 @@
               <div class="row margin-top-10">
                 <%= textcaptcha_fields(f) do %>
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <%= f.label :textcaptcha_answer, @contact.textcaptcha_question, :class => 'control-label mandatory' %>
+                    <%= f.label :textcaptcha_answer, @contact.textcaptcha_question, :class => 'control-label mandatory' %> <span class="red">*</span>
                     <%= f.text_field :textcaptcha_answer, :value => '', :class => 'form-control' %>
-                    <span class="help-inline failure"><%= @contact.errors[:textcaptcha_answer].join(", ") %></span>
+                    <span class="help-inline failure red"><%= @contact.errors[:textcaptcha_answer].join(", ") %></span>
                   </div>
                 <% end %>
               </div>
