@@ -64,6 +64,11 @@
   <link href="/assets/favicon.png" rel="icon" type="image/x-icon" />
 </head>
 <body>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        noty({text: "You tried to access unavailable path", type: 'error'});
+      });
+    </script>
 <div class="body">
   <!--demo code-->
 <div role="navigation" class="navbar navbar-default padding-5">
