@@ -50,11 +50,11 @@
       <div class="row">
         <div class="col-md-8">
           <%= link_to (image_tag("moorem-technologies-footer.png", :alt => "Moorem Technology", class: "logo img-responsive margin-right-10 pull-left")), root_path %>
-          <div class="padding-top-25">
+          <div class="padding-top-15">
             <p class="white">© Copyright 2014 by Moorem Technologies Pvt. Ltd. All Rights Reserved.</p>
           </div>
         </div>
-        <div class="col-md-4 margin-top-29">
+        <div class="col-md-4 margin-top-18">
           <nav id="sub-menu">
             <ul>
               <li><%= link_to "Contact Us", contact_pages_path %></li>
@@ -88,7 +88,7 @@
     var x = tweets.length;
     var element = document.getElementById('tweets');
     var html = '<ul>';
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 2; i++) {
       if (tweets[i].innerHTML) {
         html += '<li>' + tweets[i].innerHTML + '</li>';
       } else {
