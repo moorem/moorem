@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.4'
 gem 'rake', '10.3.2'
 gem 'thin', '1.6.2'
 gem 'pg', '0.17.1'
