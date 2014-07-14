@@ -133,7 +133,8 @@
       <h1 class="short">Moorem Technologies is Design, Development &amp; Quality Assurance Strategy.</h1>
 
       <p class="featured lead">
-        We specialise in the development of unique, cleanly designed, responsive websites that function on desktop, tablet and mobile devices.
+        We specialise in the development of unique, cleanly designed, responsive websites that function on desktop,
+        tablet and mobile devices.
       </p>
     </div>
   </div>
@@ -308,7 +309,8 @@
           </div>
           <div id="collapseThree" class="panel-collapse collapse">
             <div class="panel-body">
-              To become one of best companies in delivering quality IT and valuable added services to our clients at competitive rates. To help our clients be pioneers in the competitive world and lead them to success.
+              To become one of best companies in delivering quality IT and valuable added services to our clients at
+              competitive rates. To help our clients be pioneers in the competitive world and lead them to success.
             </div>
           </div>
         </div>
@@ -326,7 +328,7 @@
   </div>
   <div class="row center">
     <div class="flexslider unstyled" data-plugin-options='{"directionNav":false, "animation":"slide", "slideshow": false, "maxVisibleItems": 6}'>
-        <ul class="slides">
+      <ul class="slides">
         <li>
           <div class="col-md-2">
             <%= image_tag("clients/acadmy-ideas.png", :class => 'mobile-max-width small', :alt => "Acadmy ideas") %>
@@ -362,11 +364,11 @@
             <%= image_tag("clients/fabrily.png", :class => 'mobile-max-width small', :alt => "Fabrily") %>
           </div>
         </li>
-          <li>
-            <div class="col-md-2">
-              <%= image_tag("clients/rewardcamp.png", :class => 'mobile-max-width small', :alt => "rewardcamp") %>
-            </div>
-          </li>
+        <li>
+          <div class="col-md-2">
+            <%= image_tag("clients/rewardcamp.png", :class => 'mobile-max-width small', :alt => "rewardcamp") %>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -377,24 +379,49 @@
 <section class="featured footer map">
   <div class="container">
     <div class="row">
-      <!--<div class="col-md-6">
+      <div class="col-md-6">
         <div class="recent-posts">
           <h2>Latest <strong>Blog</strong> Posts</h2>
 
           <div class="row">
-            <span class="col-md-4"> Coming Soon...</span>
+            <div class="flexslider unstyled" data-plugin-options='{"directionNav":false, "animation":"slide"}'>
+							<ul class="slides">
+								<li>
+									<div class="span3">
+										<article>
+											<div class="date">
+												<span class="day">15</span>
+												<span class="month">Jan</span>
+											</div>
+											<h4><a href="blog-post.html">Learn Ruby on Rails with this Step-by-step</a></h4>
+											<p>
+                        To become a great developer, you have to follow these steps, where you will find all the basics:-
+                        <ul>
+                          <li>1. Master the basics of programming.</li>
+                          <li>2. Learn Ruby.</li>
+                          <li>3. Start out with simpler web frameworks.</li>
+                          <li>4. Get acquainted with Rails.</li>
+                          <li>5. Read the Rails tutorial</li>
+                          <li>6. Check out a guidebook or take a course</li>
+                          <li>7. Get involved in the Ruby on Rails community</li>
+                        </ul>
+                      <%= link_to '#', :title => "read more", :class=>'pull-right' do %>read more <i class="icon-angle-right"></i><% end %>
+											</p>
+										</article>
+									</div>
+								</li>
+							</ul>
+						</div>
 
             <div class="row">
-              <div class="col-md-6">
-                <a class="btn btn-flat btn-mini btn-primary pull-right pull-bottom-phone hidden" href="#">View
-                  All Posts
-                  <i class="icon-arrow-right"></i></a>
+              <div class="col-md-12">
+                <%= link_to '#', :title => 'All Posts', :class=>'btn btn-flat btn-mini btn-primary pull-right pull-bottom-phone' do %>All Posts <i class="icon-angle-right"></i><% end %>
               </div>
             </div>
           </div>
         </div>
-      </div>-->
-      <div class="col-md-12">
+      </div>
+      <div class="col-md-6">
         <h2><strong>What</strong> Client’s Say</h2>
 
         <div class="row">

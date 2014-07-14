@@ -296,7 +296,7 @@ article.post div.post-date span.month {
 
 div.recent-posts div.date span.day,
 article.post div.post-date span.day {
-	color: #0088cc;
+	color: #0088cc !important;
 }
 
 div.pricing-table div.most-popular {
