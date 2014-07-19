@@ -47,7 +47,7 @@ gem 'capistrano-rails', group: :development
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem 'bootstrap-sass', '~> 3.1.1.1'
-gem 'font-awesome-rails', '~> 4.0.3.2'
+gem 'bootstrap-sass', '3.2.0.0'
+gem 'font-awesome-rails', '4.1.0.0'
 
-gem 'acts_as_textcaptcha'
+gem 'acts_as_textcaptcha', '4.1.2'
