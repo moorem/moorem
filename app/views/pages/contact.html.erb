@@ -29,7 +29,7 @@
         <h2 class="short"><strong>Contact</strong> Us</h2>
 
         <div id="contact_replace">
-          <%= form_for @contact, :multipart => true, :url => pages_path, :html => {:class => 'reply'} do |f| %>
+          <%= form_for @contact,:url => pages_path, :html => {:multipart => true, :class => 'reply'} do |f| %>
             <fieldset>
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

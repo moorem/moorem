@@ -10,11 +10,12 @@ class PagesController < ApplicationController
   end
 
   def create
+    #render :text => params and return
     @contact = Contact.new(params[:contact])
     if @contact.valid?
       @contact.save
       UserMailer.contact(@contact).deliver
-      UserMailer.admin_contact(params[:contact][:uploaded_document], @contact).deliver
+      UserMailer.admin_contact(params[:uploaded_document], @contact).deliver
       redirect_to root_path, flash: {:success => 'Your request has been sent'}
     else
       render 'contact'
