@@ -23,8 +23,8 @@ module Moorem
     config.assets.enabled = true
     config.assets.paths << "#{Rails.root}/public/assets/fonts/font-awesome/font"
     config.assets.precompile += [
-        'glyphicons-halflings.png',
-        'glyphicons-halflings-white.png'
+      'glyphicons-halflings.png',
+      'glyphicons-halflings-white.png'
     ]
   end
 end

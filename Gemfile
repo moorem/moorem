@@ -40,7 +40,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano-rails', group: :development
+# gem 'capistrano-rails', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
@@ -49,5 +49,4 @@ gem 'capistrano-rails', group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'font-awesome-rails', '4.1.0.0'
-
 gem 'acts_as_textcaptcha', '4.1.2'
