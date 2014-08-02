@@ -268,3 +268,12 @@ textarea{
   margin-right: 15px;
   margin-top: 20px;
 }
+
+.icon-group:before, .icon-file:before, .icon-google-plus:before, .icon-adjust:before, .icon-film:before, .icon-reorder:before,
+.icon-desktop:before, .icon-link:before, .icon-github:before, .icon-linkedin:before, .icon-twitter:before, .icon-facebook:before{
+  margin-top: 10px;
+}
+
+.feature-box > .feature-box-icon > i{
+  margin-top: 10px;
+}
