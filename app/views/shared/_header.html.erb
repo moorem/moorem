@@ -69,9 +69,15 @@
            <%= link_to "Career", career_pages_path %>
          </li>
        <% end %>
-       <li>
-         <%= link_to "blog" %>
-       </li>
+       <% if params[:controller] == 'pages' and params[:action] == 'career' %>
+         <li class="active">
+           <%= link_to "Blog", blog_pages_path %>
+         </li>
+       <% else %>
+         <li>
+           <%= link_to "Blog", blog_pages_path %>
+         </li>
+       <% end %>
        <% if params[:controller] == 'pages' and params[:action] == 'contact' %>
          <li class="active">
            <%= link_to "Contact Us".html_safe, contact_pages_path %>

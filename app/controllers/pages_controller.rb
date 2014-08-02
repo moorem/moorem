@@ -31,4 +31,7 @@ class PagesController < ApplicationController
   def portfolio
   end
 
+  def blog
+  end
+
 end

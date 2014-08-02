@@ -23,6 +23,7 @@ Rails.application.routes.draw do
       get :portfolio
       get :career
       post :send_newsletter
+      get :blog
       get "*path" => 'errors#routing'
     end
   end
