@@ -50,3 +50,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'font-awesome-rails', '4.1.0.0'
 gem 'acts_as_textcaptcha', '4.1.2'
+
+
+#sitemap
+gem "dynamic_sitemaps"
