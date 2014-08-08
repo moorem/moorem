@@ -24,7 +24,7 @@ Rails.application.routes.draw do
       get :career
       post :send_newsletter
       get :blog
-      get "*path" => 'errors#routing'
+      get '*path' => 'home#error'
     end
   end
 

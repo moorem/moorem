@@ -3,6 +3,10 @@ class HomeController < ApplicationController
   def index
   end
 
+  def error
+    redirect_to root_path
+  end
+
   def sitemap
     path = Rails.root.join("public", "sitemaps", current_site.key, "sitemap.xml")
     if File.exists?(path)
