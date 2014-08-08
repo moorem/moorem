@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def exception
-    flash[:notice] = "You tried to access unavailable path"
     redirect_to root_url
   end
 end
