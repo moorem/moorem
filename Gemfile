@@ -47,8 +47,9 @@ gem 'unicorn'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem 'bootstrap-sass', '3.2.0.0'
+gem 'bootstrap-sass', '3.2.0.1'
 gem 'font-awesome-rails', '4.1.0.0'
 gem 'acts_as_textcaptcha', '4.1.2'
 gem 'dynamic_sitemaps'
 gem 'rails_12factor'
+gem 'autoprefixer-rails'
