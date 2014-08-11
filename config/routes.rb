@@ -22,6 +22,7 @@ Rails.application.routes.draw do
       get :about
       get :portfolio
       get :career
+      get :who_we_are
       post :send_newsletter
       get :blog
       get '*path' => 'home#error'

@@ -189,7 +189,7 @@ header nav ul.nav-main ul.dropdown-menu,
 header nav ul.nav-main li.dropdown.open a.dropdown-toggle,
 header nav ul.nav-main li.active a,
 header nav ul.nav-main li.dropdown:hover a {
-	color: #FFF;
+	color: #FFF !important;
 	background-color: #0088cc !important;
 }
 
@@ -316,6 +316,10 @@ div.pricing-table div.most-popular h3 {
 
 footer div.footer-ribon {
 	background: #0088cc;
+  margin: -60px 0 0 30px;
+  padding: 10px 20px 6px;
+  position: absolute;
+  color: #ffffff;
 }
 
 footer div.footer-ribon::before {
