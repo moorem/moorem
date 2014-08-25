@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<style>
+#mydiv{
+    
+    width:50px;
+    height:200px;
+    border: 2px solid red;
+}
+</style>
+
+<script>
+// jQueryMobile-SwipeUpDown
+// ----------------------------------
+//
+// Copyright (c)2012 Donnovan Lewis
+// Distributed under MIT license
+//
+// https://github.com/blackdynamo/jquerymobile-swipeupdown
+(function () {
+// initializes touch and scroll events
+var supportTouch = $.support.touch,
+scrollEvent = "touchmove scroll",
+touchStartEvent = supportTouch ? "touchstart" : "mousedown",
+touchStopEvent = supportTouch ? "touchend" : "mouseup",
+touchMoveEvent = supportTouch ? "touchmove" : "mousemove";
+// handles swipeup and swipedown
+$.event.special.swipeupdown = {
+setup: function () {
+var thisObject = this;
+var $this = $(thisObject);
+$this.bind(touchStartEvent, function (event) {
+var data = event.originalEvent.touches ?
+event.originalEvent.touches[ 0 ] :
+event,
+start = {
+time: (new Date).getTime(),
+coords: [ data.pageX, data.pageY ],
+origin: $(event.target)
+},
+stop;
+function moveHandler(event) {
+if (!start) {
+return;
+}
+var data = event.originalEvent.touches ?
+event.originalEvent.touches[ 0 ] :
+event;
+stop = {
+time: (new Date).getTime(),
+coords: [ data.pageX, data.pageY ]
+};
+// prevent scrolling
+if (Math.abs(start.coords[1] - stop.coords[1]) > 10) {
+event.preventDefault();
+}
+}
+$this
+.bind(touchMoveEvent, moveHandler)
+.one(touchStopEvent, function (event) {
+$this.unbind(touchMoveEvent, moveHandler);
+if (start && stop) {
+if (stop.time - start.time < 1000 &&
+Math.abs(start.coords[1] - stop.coords[1]) > 30 &&
+Math.abs(start.coords[0] - stop.coords[0]) < 75) {
+start.origin
+.trigger("swipeupdown")
+.trigger(start.coords[1] > stop.coords[1] ? "swipeup" : "swipedown");
+}
+}
+start = stop = undefined;
+});
+});
+}
+};
+//Adds the events to the jQuery events special collection
+$.each({
+swipedown: "swipeupdown",
+swipeup: "swipeupdown"
+}, function (event, sourceEvent) {
+$.event.special[event] = {
+setup: function () {
+$(this).bind(sourceEvent, $.noop);
+}
+};
+});
+})();
+
+
+$(document).on("pagecreate","#pageone",function(){
+  $("#h1").on("swipedown",function(){
+    alert("You swiped down!");
+  });                       
+});
+
+ $(document).on("pagecreate","#pageone",function(){
+  $("#h1").on("swipeleft",function(){
+    alert("You swiped left!");
+  });                       
+});
+ $(document).on("pagecreate","#pageone",function(){
+  $("#h1").on("swiperight",function(){
+    alert("You swiped right!");
+  });                       
+});
+</script>
+</head>
+
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="h1">
+    <h1>Swipe me to left, right and down:- you will found alert popup for those three swipe.</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p style="border:1px solid black;margin:5px;">Swipe - do not swipe outside the border!</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+</body>
+</html>

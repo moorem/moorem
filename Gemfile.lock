@@ -31,8 +31,6 @@ GEM
       tzinfo (~> 1.1)
     acts_as_textcaptcha (4.1.2)
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (2.2.0.20140804)
-      execjs
     bootstrap-sass (3.2.0.1)
       sass (~> 3.2)
     builder (3.2.2)
@@ -44,6 +42,7 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     daemons (1.1.9)
+    dynamic_sitemaps (2.0.0)
     erubis (2.7.0)
     eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
@@ -103,9 +102,9 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
-    sdoc (0.4.0)
-      json (~> 1.8)
-      rdoc (~> 4.0, < 5.0)
+    sdoc (0.4.1)
+      json (~> 1.7, >= 1.7.7)
+      rdoc (~> 4.0)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -138,15 +137,14 @@ GEM
       json (>= 1.8.0)
 
 PLATFORMS
-  ruby
   x86-mingw32
 
 DEPENDENCIES
   actionpack-page_caching (= 1.0.2)
   acts_as_textcaptcha (= 4.1.2)
-  autoprefixer-rails
   bootstrap-sass (= 3.2.0.1)
   coffee-rails (~> 4.0.1)
+  dynamic_sitemaps
   font-awesome-rails (= 4.1.0.0)
   jbuilder (~> 2.0)
   jquery-rails (= 3.1.0)

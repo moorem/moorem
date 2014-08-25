@@ -1,51 +1,75 @@
-<div role="navigation" class="navbar navbar-default padding-5">
+<header id="header">
   <div class="container">
-    <div class="navbar-header">
-      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="social-icons visible-xs social-icons-responsive">
-        <ul class="social-icons">
-          <li class="facebook">
-            <a href="https://www.facebook.com/mooremtech" target="_blank" title="Facebook">Facebook</a></li>
-          <li class="twitter"><a href="https://twitter.com/mooremtech" target="_blank" title="Twitter">Twitter</a></li>
-          <li class="linkedin">
-            <a href="http://www.linkedin.com/company/moorem-technologies-pvt-ltd" target="_blank" title="Linkedin">Linkedin</a>
+    <h1 class="logo">
+      <%= link_to (image_tag 'logo.png', :alt => 'Moorem Technology Private Limited', style: 'top:0px;'), root_path %>
+    </h1>
+    <nav>
+      <ul class="nav nav-pills nav-top">
+        <li>
+        <li>
+          <%= link_to 'About Us <i class="icon icon-angle-right"></i>'.html_safe, about_pages_path, :class=>'dropdown-toggle' %></li>
+        </li>
+        <li>
+          <%= link_to 'Contact Us <i class="icon icon-angle-right"></i>'.html_safe, contact_pages_path, :class=>'dropdown-toggle' %></li>
+        </li>
+        <!--<li class="phone">
+          <span>INDIA <i class="icon icon-phone"></i>(123) 456-7890</span>
+          <span>UK &nbsp; &nbsp; <i class="icon icon-phone"></i>(123) 456-7890</span>
+        </li>-->
+      </ul>
+    </nav>
+   <!-- <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+      <i class="icon icon-bars"></i>
+    </button>-->
+    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse nav-main-collapse collapse">
+    <div class="container">
+      <ul class="social-icons">
+        <li class="facebook"><a href="https://www.facebook.com/mooremtech" target="_blank" title="Facebook">Facebook</a></li>
+        <li class="twitter"><a href="https://twitter.com/mooremtech" target="_blank" title="Twitter">Twitter</a></li>
+        <li class="linkedin"><a href="http://www.linkedin.com/company/moorem-technologies-pvt-ltd" target="_blank" title="Linkedin">Linkedin</a></li>
+      </ul>
+      <nav class="nav-main mega-menu">
+        <ul class="nav nav-pills nav-main" id="mainMenu">
+          <li class="<%= 'active' if params[:controller] == 'home' && params[:action] == 'index' %>">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="dropdown <%= 'active' if params[:controller] == 'pages' && params[:action] == 'about' %>">
+            <%= link_to 'About Us <i class=" icon-angle-down"></i>'.html_safe , '#', :class=>'dropdown-toggle' %>
+            <ul class="dropdown-menu">
+              <li><%= link_to 'About Us', about_pages_path, :class=>'dropdown-toggle' %></li>
+              <!--<li><%#= link_to 'Who we are?', who_we_are_pages_path, :class=>'dropdown-toggle' %></li>-->
+            </ul>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'portfolio' %>">
+            <%= link_to 'Portfolio', portfolio_pages_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'career' %>">
+            <%= link_to 'Career', career_pages_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'team' %>">
+            <%= link_to 'Team', team_pages_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'blog' %>">
+            <%= link_to 'Blog', blog_pages_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'contact' %>">
+            <%= link_to 'Contact Us', contact_pages_path %>
           </li>
         </ul>
-      </div>
-      <%= link_to (image_tag 'logo.png', :alt => 'Moorem Technology Private Limited', class: 'logo img-responsive'), root_path %>
+      </nav>
     </div>
-
-    <div class="navbar-collapse collapse">
-
-      <ul class="nav navbar-nav navbar-right margin-top-15">
-        <li class="<%= 'active' if params[:controller] == 'home' && params[:action] == 'index' %>"><%= link_to 'Home', root_path %></li>
-        <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'about' %>"><%= link_to 'About Us', about_pages_path %></li>
-        <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'portfolio' %>"><%= link_to 'Portfolio', portfolio_pages_path %></li>
-        <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'team' %>"><%= link_to 'Team', team_pages_path %></li>
-        <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'career' %>"><%= link_to 'Career', career_pages_path %></li>
-        <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'blog' %>"><%= link_to 'Blog', blog_pages_path %></li>
-        <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'contact' %>"><%= link_to 'Contact Us', contact_pages_path %></li>
-        <li>
-          <div class="social-icons padding-left-20 hidden-xs">
-            <ul class="social-icons">
-              <li class="facebook">
-                <a href="https://www.facebook.com/mooremtech" target="_blank" title="Facebook">Facebook</a>
-              </li>
-              <li class="twitter"><a href="https://twitter.com/mooremtech" target="_blank" title="Twitter">Twitter</a>
-              </li>
-              <li class="linkedin">
-                <a href="http://www.linkedin.com/company/moorem-technologies-pvt-ltd" target="_blank" title="Linkedin">Linkedin</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!--/.nav-collapse -->
   </div>
-</div>
+</header>
+<script>
+  $('.dropdown').hover(
+      function(){ $(this).addClass('resp-active') },
+      function(){ $(this).removeClass('resp-active') }
+  )
+</script>
