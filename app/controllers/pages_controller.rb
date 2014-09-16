@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-#caches_page :team, :about, :services, :portfolio, :career
+caches_page :team, :about, :blog, :portfolio, :career
 
   def team
   end
