@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
-  #caches_page :index, :about, :career, :contact, :portfolio, :team
+  caches_page :index
+
   def index
   end
 
@@ -18,5 +19,4 @@ class HomeController < ApplicationController
 
   def robots
   end
-
 end
