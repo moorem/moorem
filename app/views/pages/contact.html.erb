@@ -159,7 +159,8 @@
     // Multiple Markers
     var markers = [
       ['Development Office, Bangalore', 12.894358, 77.625873],
-      ['Business Office, Gurgaon', 28.461678, 77.066336]
+      ['Business Office, Gurgaon', 28.461678, 77.066336],
+      ['UK Office, UK', 50.909700, -1.404351]
     ];
 
     // Info Window Content
@@ -170,6 +171,10 @@
       ['<div class="info_content">' +
           '<h5 style="color:#0088CC">Registered Office</h5>' +
           '<p>Sector 47,Gurgaon, India - 122001</p>' +
+          '</div>'],
+      ['<div class="info_content">' +
+          '<h5 style="color:#0088CC">UK Office</h5>' +
+          '<p>Southampton, United Kingdom</p>' +
           '</div>']
     ];
 
@@ -200,7 +205,7 @@
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function (event) {
-      this.setZoom(4);
+      this.setZoom(3);
       google.maps.event.removeListener(boundsListener);
     });
   }
