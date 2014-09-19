@@ -25,6 +25,7 @@ Rails.application.routes.draw do
       get :who_we_are
       post :send_newsletter
       get :blog
+      get :sitemap
       get '*path' => 'home#error'
     end
   end

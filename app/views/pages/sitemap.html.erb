@@ -1,0 +1,75 @@
+<div class="main" role="main">
+
+  <section class="page-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Pages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <h2><strong>Sitemap</strong></h2>
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <ul class="sitemap list icons">
+          <li>
+            <i class="icon icon-angle-right"></i> <%= link_to 'Home', root_path %>
+
+          </li>
+          <li>
+            <i class="icon icon-angle-down"></i> <%= link_to 'About Us' , '#' %>
+            <ul class="list icons">
+              <li>
+                <i class="icon icon-angle-right"></i> <%= link_to 'About Us', about_pages_path %>
+              </li>
+              <li>
+                <i class="icon icon-angle-right"></i> <%= link_to 'Who we are?', who_we_are_pages_path %>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i class="icon icon-angle-right"></i> <%= link_to 'Portfolio', portfolio_pages_path %>
+          </li>
+          <li>
+            <i class="icon icon-angle-right"></i> <%= link_to 'Career', career_pages_path %>
+          </li>
+          <li>
+            <i class="icon icon-angle-right"></i> <%= link_to 'Team', team_pages_path %>
+          </li>
+          <li>
+            <i class="icon icon-angle-right"></i> <%= link_to 'Blog', blog_pages_path %>
+          </li>
+          <li>
+            <i class="icon icon-angle-right"></i>  <%= link_to 'Contact Us', contact_pages_path %>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="col-md-6 hidden-xs">
+        <h2>Who We Are</h2>
+        <p class="lead"><strong>The New way to New success</strong>, with new technology versions with latest code. We give you a high quality work in <span class="alternative-font">Design and Applications</span></p>
+        <ul class="list icons">
+          <li><i class="icon-ok"></i>Friendly Environment</li>
+          <li><i class="icon-ok text-alignmen"></i>Learning from your fellow members.</li>
+          <li><i class="icon-ok text-alignmen"></i>You have the chance to get involved in new ventures.</li>
+          <li><i class="icon-ok"></i>More learning.</li>
+          <li><i class="icon-ok"></i>More future success.</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -34,4 +34,7 @@ caches_page :team, :about, :blog, :portfolio, :career
   def blog
   end
 
+  def sitemap
+  end
+
 end
