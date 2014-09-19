@@ -10,7 +10,6 @@ class PagesController < ApplicationController
   end
 
   def create
-    #render :text => params and return
     @contact = Contact.new(params[:contact])
     if @contact.valid?
       @contact.save
@@ -36,6 +35,7 @@ class PagesController < ApplicationController
 
   def sitemap
   end
+
   def show
     render status_code.to_s, :status => status_code
   end
@@ -45,5 +45,4 @@ class PagesController < ApplicationController
   def status_code
     params[:code] || 404
   end
-
 end

@@ -13,7 +13,6 @@ Rails.application.routes.draw do
       post :send_newsletter
       get :blog
       get :sitemap
-      get '*path' => 'home#error'
     end
   end
 
