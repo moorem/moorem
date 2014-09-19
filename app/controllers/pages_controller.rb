@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-caches_page :team, :about, :blog, :portfolio, :career
+  caches_page :team, :about, :blog, :portfolio, :career
 
   def team
   end
@@ -32,6 +32,16 @@ caches_page :team, :about, :blog, :portfolio, :career
   end
 
   def blog
+  end
+
+  def show
+    render status_code.to_s, :status => status_code
+  end
+
+  protected
+
+  def status_code
+    params[:code] || 404
   end
 
 end
