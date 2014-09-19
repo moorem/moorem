@@ -81,7 +81,7 @@
 
             </fieldset>
             <div class="btn-toolbar margin-top-10">
-              <button class="btn btn-large btn-primary pull-left" type="submit">Send</button>
+              <button class="btn btn-large btn-primary pull-right" type="submit">Send</button>
             </div>
             <div class="success alert-success alert hidden">Your message has been sent successfully.
             </div>
@@ -117,7 +117,7 @@
           <li><i class="icon-map-marker"></i> <strong>Address:</strong> #538, 2nd Floor, 14th Cross, 3rd Block,
             ViswaPriya Layout, Begur Main Road, Bangalore, India - 560068
           </li>
-          <li><i class="icon-phone"></i> <strong>Phone:</strong> +91 973 878 0580</li>
+          <li><i class="icon-phone"></i> <strong>Phone:</strong>  (080) 25-74-5444</li>
           <li><i class="icon-envelope"></i> <strong>Email:</strong>
             <a href="mailto:contact@moorem.com">contact@moorem.com</a></li>
         </ul>
@@ -159,7 +159,8 @@
     // Multiple Markers
     var markers = [
       ['Development Office, Bangalore', 12.894358, 77.625873],
-      ['Business Office, Gurgaon', 28.461678, 77.066336]
+      ['Business Office, Gurgaon', 28.461678, 77.066336],
+      ['UK Office, UK', 50.909700, -1.404351]
     ];
 
     // Info Window Content
@@ -170,6 +171,10 @@
       ['<div class="info_content">' +
           '<h5 style="color:#0088CC">Registered Office</h5>' +
           '<p>Sector 47,Gurgaon, India - 122001</p>' +
+          '</div>'],
+      ['<div class="info_content">' +
+          '<h5 style="color:#0088CC">UK Office</h5>' +
+          '<p>Southampton, United Kingdom</p>' +
           '</div>']
     ];
 
@@ -180,10 +185,12 @@
     for (i = 0; i < markers.length; i++) {
       var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
       bounds.extend(position);
+      var iconBase = 'assets/Map-icon-1.png';
       marker = new google.maps.Marker({
         position: position,
         map: map,
-        title: markers[i][0]
+        title: markers[i][0],
+        icon: iconBase
       });
 
       // Allow each marker to have an info window
@@ -200,7 +207,7 @@
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function (event) {
-      this.setZoom(4);
+      this.setZoom(3);
       google.maps.event.removeListener(boundsListener);
     });
   }
