@@ -26,5 +26,6 @@ module Moorem
       'glyphicons-halflings.png',
       'glyphicons-halflings-white.png'
     ]
+    config.exceptions_app = self.routes
   end
 end
