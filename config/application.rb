@@ -21,11 +21,6 @@ module Moorem
     # config.i18n.default_locale = :de
     # Enable the asset pipeline
     # config.assets.enabled = true
-    # config.assets.paths << "#{Rails.root}/public/assets/fonts/font-awesome/font"
-    # config.assets.precompile += [
-    #   'glyphicons-halflings.png',
-    #   'glyphicons-halflings-white.png'
-    # ]
     config.exceptions_app = self.routes
   end
 end
