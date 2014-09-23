@@ -6,7 +6,7 @@ gem 'rails', '4.1.6'
 gem 'rake', '10.3.2'
 gem 'thin', '1.6.2'
 gem 'pg', '0.17.1', group: :production
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 
 # Use actionpack-page_caching for page_caching
 gem 'actionpack-page_caching', '1.0.2'
@@ -36,7 +36,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-gem 'unicorn'
+#gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
