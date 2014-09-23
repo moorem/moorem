@@ -21,6 +21,7 @@ module Moorem
     # config.i18n.default_locale = :de
     # Enable the asset pipeline
     # config.assets.enabled = true
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
     config.exceptions_app = self.routes
   end
 end
