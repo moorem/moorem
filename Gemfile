@@ -5,15 +5,14 @@ ruby '2.0.0'
 gem 'rails', '4.1.6'
 gem 'rake', '10.3.2'
 gem 'thin', '1.6.2'
-gem 'pg', '0.17.1'
+gem 'pg', '0.17.1', group: :production
+gem 'sqlite3'
 
 # Use actionpack-page_caching for page_caching
 gem 'actionpack-page_caching', '1.0.2'
 
 # Using protected_attributes for attr_accessible method
 gem 'protected_attributes', '1.0.8'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '1.3.9', group: :development
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,12 +42,11 @@ gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem 'bootstrap-sass', '3.2.0.1'
-gem 'font-awesome-rails', '4.1.0.0'
+gem 'bootstrap-sass', '3.2.0.2'
+gem 'font-awesome-rails', '4.2.0.0'
 gem 'acts_as_textcaptcha', '4.1.2'
-gem 'rails_12factor'
-gem 'dynamic_sitemaps'
+gem 'rails_12factor', group: :production
