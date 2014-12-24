@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.7'
-gem 'rake', '10.3.2'
+gem 'rails', '4.2.0'
+gem 'rake', '10.4.2'
 gem 'thin', '1.6.3'
 gem 'pg', '0.17.1', group: :production
 gem 'sqlite3', group: :development
@@ -46,7 +46,7 @@ gem 'unicorn', group: :production
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem 'bootstrap-sass', '3.2.0.2'
+gem 'bootstrap-sass', '3.3.1.0'
 gem 'font-awesome-rails', '4.2.0.0'
 gem 'acts_as_textcaptcha', '4.1.2'
 gem 'rails_12factor', group: :production
