@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  caches_page :team, :about, :blog, :portfolio, :career
+  caches_page :team, :about, :who_we_are, :blog, :portfolio, :career
 
   def team
   end
@@ -22,6 +22,9 @@ class PagesController < ApplicationController
   end
 
   def about
+  end
+
+  def who_we_are
   end
 
   def career
