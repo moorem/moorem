@@ -9,7 +9,7 @@ gem 'pg', '0.17.1', group: :production
 gem 'sqlite3', group: :development
 
 # Use actionpack-page_caching for page_caching
-gem 'actionpack-page_caching', '1.0.2'
+gem 'actionpack-page_caching', github: 'rails/actionpack-page_caching'
 
 # Using protected_attributes for attr_accessible method
 gem 'protected_attributes', '1.0.8'

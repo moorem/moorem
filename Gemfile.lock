@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rails/actionpack-page_caching.git
+  revision: c5862484963b97f71e7f6e2155c11f0158e08f3e
+  specs:
+    actionpack-page_caching (1.0.2)
+      actionpack (>= 4.0.0, < 5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,8 +21,6 @@ GEM
       rack-test (~> 0.6.2)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.1)
-    actionpack-page_caching (1.0.2)
-      actionpack (>= 4.0.0, < 5)
     actionview (4.2.0)
       activesupport (= 4.2.0)
       builder (~> 3.1)
@@ -162,7 +167,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  actionpack-page_caching (= 1.0.2)
+  actionpack-page_caching!
   acts_as_textcaptcha (= 4.1.2)
   bootstrap-sass (= 3.3.1.0)
   coffee-rails (~> 4.0.1)
