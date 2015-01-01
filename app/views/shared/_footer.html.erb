@@ -54,7 +54,7 @@
         <div class="col-md-8">
           <%= link_to (image_tag 'logo-small.png', :alt => 'Moorem Technology Private Limited', class: 'logo img-responsive margin-right-10 pull-left'), root_path %>
           <div class="padding-top-15">
-            <p class="white">© Copyright 2014 by Moorem Technologies Pvt. Ltd. All Rights Reserved.</p>
+            <p class="white">© Copyright <%= Time.now.year %> by Moorem Technologies Pvt. Ltd. All Rights Reserved.</p>
           </div>
         </div>
         <div class="col-md-4 margin-top-18">
@@ -73,18 +73,20 @@
 <script type="text/javascript">
   var twitterFetcher = function () {
     var d = null;
-    return{fetch: function (a, b) {
-      d = b;
-      var c = document.createElement("script");
-      c.type = "text/javascript";
-      c.src = "http://cdn.syndication.twimg.com/widgets/timelines/" + a + "?&lang=en&callback=twitterFetcher.callback&suppress_response_codes=true&rnd=" + Math.random();
-      document.getElementsByTagName("head")[0].appendChild(c)
-    }, callback: function (a) {
-      var b = document.createElement("div");
-      b.innerHTML = a.body;
-      a = b.getElementsByClassName("e-entry-title");
-      d(a)
-    }}
+    return {
+      fetch: function (a, b) {
+        d = b;
+        var c = document.createElement("script");
+        c.type = "text/javascript";
+        c.src = "http://cdn.syndication.twimg.com/widgets/timelines/" + a + "?&lang=en&callback=twitterFetcher.callback&suppress_response_codes=true&rnd=" + Math.random();
+        document.getElementsByTagName("head")[0].appendChild(c)
+      }, callback: function (a) {
+        var b = document.createElement("div");
+        b.innerHTML = a.body;
+        a = b.getElementsByClassName("e-entry-title");
+        d(a)
+      }
+    }
   }();
 
   twitterFetcher.fetch('463548433580580864', function (tweets) {
