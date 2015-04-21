@@ -2,17 +2,17 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.1'
 gem 'rake', '10.4.2'
 gem 'thin', '1.6.3'
-gem 'pg', '0.17.1', group: :production
+gem 'pg', '0.18.1', group: :production
 gem 'sqlite3', group: :development
 
 # Use actionpack-page_caching for page_caching
 gem 'actionpack-page_caching', github: 'rails/actionpack-page_caching'
 
 # Using protected_attributes for attr_accessible method
-gem 'protected_attributes', '1.0.8'
+gem 'protected_attributes', '1.0.9'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,7 +46,7 @@ gem 'unicorn', group: :production
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem 'bootstrap-sass', '3.3.3'
-gem 'font-awesome-rails', '4.2.0.0'
+gem 'bootstrap-sass', '3.3.4.1'
+gem 'font-awesome-rails', '4.3.0.0'
 gem 'acts_as_textcaptcha', '4.1.2'
 gem 'rails_12factor', group: :production
