@@ -1,8 +1,8 @@
 <header id="header">
   <div class="container">
-    <h1 class="logo">
+    <div class="logo">
       <%= link_to (image_tag 'logo.png', :alt => 'Moorem Technology Private Limited', style: 'top:0px;'), root_path %>
-    </h1>
+    </div>
     <nav>
       <ul class="nav nav-pills nav-top">
         <li class="phone text-right">
@@ -61,12 +61,12 @@
   </div>
 </header>
 <script>
-  $('.dropdown').hover(
-      function () {
-        $(this).addClass('resp-active')
-      },
-      function () {
-        $(this).removeClass('resp-active')
-      }
-  )
+    $('.dropdown').hover(
+            function () {
+                $(this).addClass('resp-active')
+            },
+            function () {
+                $(this).removeClass('resp-active')
+            }
+    )
 </script>
