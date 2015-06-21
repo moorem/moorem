@@ -50,3 +50,4 @@ gem 'bootstrap-sass', '3.3.4.1'
 gem 'font-awesome-rails', '4.3.0.0'
 gem 'acts_as_textcaptcha', '4.1.2'
 gem 'rails_12factor', group: :production
+gem 'heroku_rails_deflate', :group => :production
