@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       get :portfolio
       get :products
       get :career
-      get :who_we_are
+      get 'who-we-are'
       post :send_newsletter
       get :blog
       get :sitemap
