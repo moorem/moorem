@@ -30,29 +30,32 @@
       </ul>
       <nav class="nav-main mega-menu">
         <ul class="nav nav-pills nav-main" id="mainMenu">
-          <li class="<%= 'active' if params[:controller] == 'home' && params[:action] == 'index' %>">
+          <li class="<%= active_class(root_path) %>">
             <%= link_to 'Home', root_path %>
           </li>
-          <li class="dropdown <%= 'active' if params[:controller] == 'pages' && params[:action] == 'about' %>">
+          <li class="dropdown <%= active_class(about_pages_path) %>">
             <%= link_to 'About Us <i class="fa fa-angle-down"></i>'.html_safe, '#', class: 'dropdown-toggle' %>
             <ul class="dropdown-menu">
               <li><%= link_to 'About Us', about_pages_path, :class => 'dropdown-toggle' %></li>
               <li><%= link_to 'Who we are?', who_we_are_pages_path, :class => 'dropdown-toggle' %></li>
             </ul>
           </li>
-          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'portfolio' %>">
+          <li class="<%= active_class(portfolio_pages_path) %>">
             <%= link_to 'Portfolio', portfolio_pages_path %>
           </li>
-          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'career' %>">
+          <li class="<%= active_class(products_pages_path) %>">
+            <%= link_to 'Products', products_pages_path %>
+          </li>
+          <li class="<%= active_class(career_pages_path) %>">
             <%= link_to 'Career', career_pages_path %>
           </li>
-          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'team' %>">
+          <li class="<%= active_class(team_pages_path) %>">
             <%= link_to 'Team', team_pages_path %>
           </li>
-          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'blog' %>">
+          <li>
             <%= link_to 'Blog', 'http://blog.moorem.com/' %>
           </li>
-          <li class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'contact' %>">
+          <li class="<%= active_class(contact_pages_path) %>">
             <%= link_to 'Contact Us', contact_pages_path %>
           </li>
         </ul>
@@ -61,12 +64,12 @@
   </div>
 </header>
 <script>
-    $('.dropdown').hover(
-            function () {
-                $(this).addClass('resp-active')
-            },
-            function () {
-                $(this).removeClass('resp-active')
-            }
-    )
+  $('.dropdown').hover(
+      function () {
+        $(this).addClass('resp-active')
+      },
+      function () {
+        $(this).removeClass('resp-active')
+      }
+  )
 </script>

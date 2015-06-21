@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get :contact
       get :about
       get :portfolio
+      get :products
       get :career
       get :who_we_are
       post :send_newsletter
