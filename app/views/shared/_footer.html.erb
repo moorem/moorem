@@ -14,7 +14,10 @@
       <div class="col-md-3">
         <h4>Latest Tweet</h4>
 
-        <div id="tweets"></div>
+        <div id="tweets">
+          <a class="twitter-timeline" data-width="360" data-height="220" href="https://twitter.com/mooremtech?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+          <script async="async" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </div>
       <div class="col-md-4">
         <div class="contact-details">
@@ -71,45 +74,7 @@
     </div>
   </div>
 </footer>
-<!--twitter latest-->
-<script type="text/javascript">
-  var twitterFetcher = function () {
-    var d = null;
-    return {
-      fetch: function (a, b) {
-        d = b;
-        var c = document.createElement("script");
-        c.type = "text/javascript";
-        c.src = "http://cdn.syndication.twimg.com/widgets/timelines/" + a + "?&lang=en&callback=twitterFetcher.callback&suppress_response_codes=true&rnd=" + Math.random();
-        document.getElementsByTagName("head")[0].appendChild(c)
-      }, callback: function (a) {
-        var b = document.createElement("div");
-        b.innerHTML = a.body;
-        a = b.getElementsByClassName("e-entry-title");
-        d(a)
-      }
-    }
-  }();
 
-  twitterFetcher.fetch('463548433580580864', function (tweets) {
-    // Do what you want with your tweets here! For example:
-    var x = tweets.length;
-    var element = document.getElementById('tweets');
-    var html = '<ul>';
-    for (var i = 0; i < 2; i++) {
-      if (tweets[i].innerHTML) {
-        html += '<li>' + tweets[i].innerHTML + '</li>';
-      } else {
-        html += '<li>' + tweets[i].textContent + '</li>';
-      }
-      //n++;
-    }
-    html += '</ul>';
-    element.innerHTML = html;
-  });
-
-</script>
-<!--twitter script end-->
 <script src="/js/revolution-slider/js/jquery.themepunch.plugins.js"></script>
 <script src="/js/revolution-slider/js/jquery.themepunch.revolution.js"></script>
 <script src="/js/circle-flip-slideshow/js/jquery.flipshow.js"></script>

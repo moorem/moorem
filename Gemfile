@@ -4,7 +4,7 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
 gem 'rake', '10.4.2'
-gem 'thin', '1.6.3'
+gem 'puma'
 gem 'pg', '0.18.1', group: :production
 gem 'sqlite3', group: :development
 
