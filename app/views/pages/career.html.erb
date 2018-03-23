@@ -31,11 +31,20 @@
       <div class="col-md-8">
 
         <section class="toggle">
-          <label>ROR Developer</label>
+          <label>Ruby On Rails Developer</label>
           <div class="toggle-content">
             <p><strong>Location:</strong> Bangalore</p>
             <p><strong>Department:</strong> Software Engineering</p>
             <p>We have hot openings for ROR Developers.</p>
+            <p><%= link_to 'Apply Now!', contact_pages_path(@contact, :anchor => "career"), class: "btn btn-large btn-primary pull-bottom" %></p>
+          </div>
+        </section>
+        <section class="toggle">
+          <label>React / React Native</label>
+          <div class="toggle-content">
+            <p><strong>Location:</strong> Bangalore</p>
+            <p><strong>Department:</strong> React / React Native Developer</p>
+            <p>We have hot openings for React / React Native Developers.</p>
             <p><%= link_to 'Apply Now!', contact_pages_path(@contact, :anchor => "career"), class: "btn btn-large btn-primary pull-bottom" %></p>
           </div>
         </section>
