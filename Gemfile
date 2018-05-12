@@ -4,7 +4,7 @@ ruby '2.5.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
 gem 'rake', '10.4.2'
-gem 'puma'
+gem 'puma', '3.11.4'
 gem 'pg', '0.18.1', group: :production
 gem 'sqlite3', group: :development
 
@@ -34,9 +34,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-gem 'unicorn', group: :production
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
