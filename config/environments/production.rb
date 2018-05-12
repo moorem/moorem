@@ -83,4 +83,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.static_cache_control = "public, max-age=31536000"
+  config.action_controller.page_cache_directory = "#{Rails.root}/public/cached_pages"
 end
