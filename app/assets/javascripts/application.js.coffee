@@ -1,7 +1,7 @@
 #= require jquery
 #= require jquery_ujs
-#= require_tree .
 #= require bootstrap
+#= require_tree .
 #= require noty/jquery.noty
 #= require noty/layouts/bottomRight
 #= require noty/themes/default
